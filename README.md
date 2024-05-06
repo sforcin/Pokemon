@@ -4,7 +4,7 @@ You will be completing Phase I prompts in the README.md file in your project Git
 
 Title of the project: A Text-Based Role-Playing Game (RPG) - pokemon 
 
-Group member names & links to github pages:  Sricharan Pamireddy (https://github.com/Sricharan-Pamireddy), Uma Akundi (https://github.com/umizoomiexe), Isabela Sforcin(https://github.com/sforcin), Brandon Nguyen, Andrew Do(https://github.com/androodo)
+Group member names & links to github pages:  Sricharan Pamireddy (https://github.com/Sricharan-Pamireddy), Uma Akundi (https://github.com/umizoomiexe), Isabela Sforcin(https://github.com/sforcin), Brandon Nguyen(https://github.com/bnguy408), Andrew Do(https://github.com/androodo)
 
 A Project description:
 
