@@ -27,6 +27,6 @@ What are the features that the project provides?
   Character actions and abilities
   Experience and Levels (Characters gaining or losing experience based on actions/ levels unlocking access to more items) 
   
-User Navigation Diagram
+## User Navigation Diagram
 ![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/user_navigation_diagram.png)
 
