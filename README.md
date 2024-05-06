@@ -31,5 +31,5 @@ What are the features that the project provides?
 ![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/user_navigation_diagram.png)
 
 ## UML Diagram
-[![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML class pokemon(1).png)](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)
+![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML class pokemon(1).png)](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)
 
