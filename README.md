@@ -2,7 +2,7 @@ Phase I - Proposal (Due Monday 4/22/2024 10:00 pm)  due before lab (Thursday Nig
 
 You will be completing Phase I prompts in the README.md file in your project GitHub repository. The README.md file will need to have:
 
-Title of the project: A Text-Based Role-Playing Game (RPG) - pokemon 
+Title of the project: A Text-Based Role-Playing Game (RPG) - Pokemon 
 
 Group member names & links to github pages:  Sricharan Pamireddy (https://github.com/Sricharan-Pamireddy), Uma Akundi (https://github.com/umizoomiexe), Isabela Sforcin(https://github.com/sforcin), Brandon Nguyen(https://github.com/bnguy408), Andrew Do(https://github.com/androodo)
 
