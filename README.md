@@ -28,12 +28,6 @@ What are the features that the project provides?
   Experience and Levels (Characters gaining or losing experience based on actions/ levels unlocking access to more items) 
 
 
-## UML Diagram
-![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)
-
-
-
-
 
 
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
