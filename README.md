@@ -1,23 +1,17 @@
-Phase I - Proposal (Due Monday 4/22/2024 10:00 pm)  due before lab (Thursday Night) 
+# <A Text-Based Role-Playing Game (RPG) - Pokemon>
+ > Authors: Sricharan Pamireddy (https://github.com/Sricharan-Pamireddy), Uma Akundi (https://github.com/umizoomiexe), Isabela Sforcin(https://github.com/sforcin), Brandon Nguyen(https://github.com/bnguy408), Andrew Do(https://github.com/androodo)
 
-You will be completing Phase I prompts in the README.md file in your project GitHub repository. The README.md file will need to have:
-
-Title of the project: A Text-Based Role-Playing Game (RPG) - Pokemon 
-
-Group member names & links to github pages:  Sricharan Pamireddy (https://github.com/Sricharan-Pamireddy), Uma Akundi (https://github.com/umizoomiexe), Isabela Sforcin(https://github.com/sforcin), Brandon Nguyen(https://github.com/bnguy408), Andrew Do(https://github.com/androodo)
-
-A Project description:
-
-Why is it important or interesting to you?
+## Project Description
+**Why is it important or interesting to you?**
   This project allows for creativity and an ability to be flexible with the details such as characters, attack strategies, and levels. It gives an opportunity to expand once a basic skeleton is made, allowing us to add components if time permits. 
 
-What languages/tools/technologies do you plan to use?
+**What languages/tools/technologies do you plan to use?**
   We will use C++ and a command line interface, along with some C++ standard libraries. We don’t plan on using any external libraries at this time. 
 
-What will be the input/output of your project?
+**What will be the input/output of your project?**
   The input of the project will be from the keyboard input from users and also files that can be read. The output will be text output to the console as the game is being played and also data being written to files.
 
-What are the features that the project provides?
+**What are the features that the project provides?**
   Ability to store previous games (ongoing or completed) 
   The ability to load previous games to be resumed.
   NPC’s having predetermined actions based on user input
@@ -27,33 +21,6 @@ What are the features that the project provides?
   Character actions and abilities
   Experience and Levels (Characters gaining or losing experience based on actions/ levels unlocking access to more items) 
 
-
-
-
- > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
- > Prompt text is any lines beginning with "\>"
- > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# <A Text-Based Role-Playing Game (RPG) - Pokemon>
- > Your author list below should include links to all members GitHub (remove existing author).
- 
- > Authors: Sricharan Pamireddy (https://github.com/Sricharan-Pamireddy), Uma Akundi (https://github.com/umizoomiexe), Isabela Sforcin(https://github.com/sforcin), Brandon Nguyen(https://github.com/bnguy408), Andrew Do(https://github.com/androodo)
-
- > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
- > ## Expectations
- > * The backend of your project should be implemented in C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
- > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
- > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
- > * **Each member of the group must actively participate in the Github Project board, writing unit tests, and reviewing commited code.**
-> * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
-## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- > * What will be the input/output of your project?
- > * What are the features that the project provides?
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board using GitHub projects (board view with default columns). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added. All columns should be in the right order.
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
  > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
