@@ -107,8 +107,7 @@ Main Menu/Landing Page:
   5. Resume Game
 ---------------------------
 ```
-
-> Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs and expected output, or any graphical user interface components if applicable (e.g. buttons, text boxes, etc). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
+This is a general layout of our UI screens. Users will have options to input "1", "2", "3", etc... to choose where to navigate. We plan to have a similar Text-based layout when it comes to attacking within the game/ actually playing the game itself. If time permits, we may choose to incoorperate a visual component (however, this is undecided as of now).
 ## Class Diagram
 ![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
