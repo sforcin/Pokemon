@@ -21,7 +21,6 @@
   Character actions and abilities
   Experience and Levels (Characters gaining or losing experience based on actions/ levels unlocking access to more items) 
 
-## Phase II
 ## User Interface Specification
  > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from the User Interface Design Document Template of CMSC 345 at the University of Maryland Global Campus)
 ### Navigation Diagram
