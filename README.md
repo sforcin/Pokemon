@@ -101,12 +101,12 @@ Main Menu/Landing Page:
 ```
 
 --------------------------
-Settings:
-1. Pause Game
-2. Edit / Add Characters
-3. Delete Game
-4. Save & Exit
-5. Resume Game
+      Settings:
+  1. Pause Game
+  2. Edit / Add Characters
+  3. Delete Game
+  4. Save & Exit
+  5. Resume Game
 ---------------------------
 ```
 
