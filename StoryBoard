@@ -1,0 +1,40 @@
+Storyline: 
+1. Game starts. 
+  Display main menu (Reference Screen layout)
+  Action: User selects an option. Start new game leads to Welcome screen
+
+2. Welcome screen: 
+  Display: “Hello, welcome to the world of Pokemon [FIXME if needed]! Before you begin your adventure, tell us your name”
+  Input: User types their name
+  Action: store the name is memory for future reference
+
+3. Character selection
+  Display the choose your starter pokemon user screen
+  Input: User selects a Pokemon
+  Action: Instantiate the chosen Pokemon object from classes (Charmander, Squirtle, Bulbasaur) according to UML
+
+4. Initial Gameplay
+  Using Display class, show the user’s character in the starting location
+  Action: Begin simple tasks (capture first pokemon)
+
+5. Pause Menu
+  Display pause menu (Settings from user diagram)
+  Input: user interact with menu. [update user diagram to show what happens when you make each decision]
+    From menu, we can delete game(clean up memory and delete it)
+    Or we could save and exit (store it in memory)
+    Edit / add characters will change the player class
+    Pause game: game will be paused for up to [maybe?] 5 minutes before it dies (and saves)
+    Menu will be displayed for a certain amount of time [maybe 5 min]
+
+5. End game and Transition States
+  Different cases will cause different endings. Depending on achievements
+  Choose whether or not to save game automatically, or only when prompted
+
+
+//possible 
+Character Creation (based on uml)
+Output: “Choose your character type”
+Player will be a trainer (only option connected to player)
+Action:  Use methods defined in Trainer class
+
+
