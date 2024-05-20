@@ -25,6 +25,8 @@
  > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from the User Interface Design Document Template of CMSC 345 at the University of Maryland Global Campus)
 ### Navigation Diagram
 ![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/user_navigation_diagram.png)
+<img width="1496" alt="image" src="https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/147475405/b1836b40-e491-4df7-93fd-0a037a96a474">
+ ^^updated UML diagram.
 
 The navigation diagram above represents the flow of how a user will navigate / use the program.
 The circle is the starting point where user can start a new game, resume a game, or will navigate to when they leave a game.
