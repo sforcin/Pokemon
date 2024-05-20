@@ -16,13 +16,15 @@ Storyline:
 4. Initial Gameplay
   Using Display class, show the user’s character in the starting location.
   Action: Move in a valid direction on the grid towards some objective.
-              (Player is immune from random battles until they get their first pokemon).
+              (Player is immune from random battles until they get their first pokemon). //so until they are a trainer, no battles (make battles exclusive for trainer class)
               (Otherwise, each movement on the grid will have a change of triggering a small battle).
-  Each player will be able to do one action (e.g. move once on the grid) and then control is switched to another player,
+  Each player will be able to do one action (e.g. move once on the grid) and then control is switched to another player(singleplayer...?),
       unless the current player triggers a battle or other longer interaction of some kind.
   Mini battles will give the player some kind of perk when won, otherwise the player will lose the best of their 3 pokemon that was used in the battle.
       The player will also gain xp, which could make them level up.
+        Action: increaase xp accordingly. set up functions for that
   When certain levels are reached, the player will unlock more features and be able to do more stuff.
+        Action: set up a boolean to go to next level if a certain xp is reached.
   
   Action: Begin simple tasks (capture first pokemon)
 
