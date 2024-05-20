@@ -14,7 +14,10 @@ Storyline:
   Action: Instantiate the chosen Pokemon object from classes (Charmander, Squirtle, Bulbasaur) according to UML
 
 4. Initial Gameplay
-  Using Display class, show the user’s character in the starting location
+  Using Display class, show the user’s character in the starting location.
+  Action: Move in a valid direction on the grid towards some objective.
+              (Player is immune from random battles until they get their first pokemon).
+              (Otherwise, each movement on the grid will have a change of triggering a small battle).
   Action: Begin simple tasks (capture first pokemon)
 
 5. Pause Menu
