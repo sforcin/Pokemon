@@ -25,8 +25,6 @@
  > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from the User Interface Design Document Template of CMSC 345 at the University of Maryland Global Campus)
 ### Navigation Diagram
 ![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/user_navigation_diagram.png)
-<img width="1496" alt="image" src="https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/147475405/b1836b40-e491-4df7-93fd-0a037a96a474">
- ^^updated UML diagram.
 
 The navigation diagram above represents the flow of how a user will navigate / use the program.
 The circle is the starting point where user can start a new game, resume a game, or will navigate to when they leave a game.
@@ -67,8 +65,10 @@ Main Menu/Landing Page:
 This is a general layout of our UI screens. Users will have options to input "1", "2", "3", etc... to choose what page to navigate to. We plan to have a similar text-based layouts when it comes to actions within the game/actually playing the game itself. If time permits, we may choose to incoorperate a visual component (however, this is undecided as of now).
 ## Class Diagram
 ![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)
+<img width="1700" alt="image" src="https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/147475405/0a31b6bd-66e8-49d1-92f1-f3cca301300f">
+Updated UML Diagram.
 
-This diagram is subject to change; As of today (5/6/2024), we only plan to add more detail/create more components and have no intention of removing components unless necessary. 
+Diagram is up to date with corrections
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
