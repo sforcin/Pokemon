@@ -64,7 +64,6 @@ Main Menu/Landing Page:
 ```
 This is a general layout of our UI screens. Users will have options to input "1", "2", "3", etc... to choose what page to navigate to. We plan to have a similar text-based layouts when it comes to actions within the game/actually playing the game itself. If time permits, we may choose to incoorperate a visual component (however, this is undecided as of now).
 ## Class Diagram
-![App Screenshot](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/blob/master/UML%20class%20Pokemon%20(1).png)
 <img width="1700" alt="image" src="https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/147475405/0a31b6bd-66e8-49d1-92f1-f3cca301300f">
 Updated UML Diagram.
 
