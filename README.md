@@ -77,7 +77,11 @@ Diagram is up to date with corrections
  > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
  >   * A new class diagram incorporating your changes after considering the SOLID principles. 
  >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply? //talk about the one about the class inheritance
+ >     * What SOLID principle(s) did you apply?
+>     
+ 1. Single Responsability Principe (SPR): I moved shared functionatilies such as the functions 'setName', 'getName', 'attack', and 'speedAttack' into the base class 'Pokemon', so each subclass has fewer responsabilities. This change ensures that subclasses are only responsible for their specific differences or extension, not common functionalities.
+ 2. Open/Closed Principle (OCP): I added an 'evolve' function, which will allow evolution behaviors to be added or changed specifically to each subclass.
+ 3. Liskov Substitution Principle(LSP): By ensuring all Pokemon related methods are being implemented in the base class and overriden in subclasses, we reinforced the principle that subclasses can replace their base class without affecting the program. This change also proves that the objects in the subclasses inherited from the Pokemon class has access to every function and member variable present in member class.
  >     * How did you apply it? i.e. describe the change. //we applied the functions we had in common to base class, and we deleted them from inherited classes
  >     * How did this change help you write better code? // we can write less code now and keep classes more organized
  > * Perform a new sprint plan like you did in Phase II.
