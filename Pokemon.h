@@ -11,16 +11,20 @@ protected:
 
 public:
 
+    Pokemon(const std::string &name = "undefined", const std::string& type = "undefined"){}
+    virtual ~Pokemon();
+
     void ChooseType();
     void setName(const std::string& name);
-    int  getName() const;
-    int  attack();
-    int  speedAttack();
-    int  checkHP() const;
-    int  useAbility();
+    std::string getName() const;
 
-
+   virtual int  attack();
+   virtual int  speedAttack();
+   virtual int  checkHP() const;
+   virtual int  useAbility();
 };
+
+
 
 
 
