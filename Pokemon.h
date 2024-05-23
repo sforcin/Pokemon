@@ -14,7 +14,7 @@ public:
     Pokemon(const std::string &name = "undefined", const std::string& type = "undefined"){}
     virtual ~Pokemon();
 
-    void ChooseType();
+    void ChooseType(const std::string &type);
     void setName(const std::string& name);
     std::string getName() const;
 
