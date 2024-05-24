@@ -16,12 +16,12 @@ protected:
 public:
     Pokemon(const std::string& name, const std::string& type, int hp, int attack, int defense, int speedAttack, int speedDefense): Name(name), Type(type), HP(hp), Attack(attack), Defense(defense), SpeedAttack(speedAttack), SpeedDefense(speedDefense) {}
     virtual ~Pokemon() {}
+    virtual void ChooseType(const std::string &type);
 
     virtual void evolve() =0;
     virtual int  useAbility();    
-    void setName(const std::string& name){
-        Name = name;
-    }
+    void setName(const std::string& name);
+    
     std::string getName() const{
         return Name;
     }
