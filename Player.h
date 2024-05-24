@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "item.h"
+#include "Item.h"
 
 class Player{
 protected:
@@ -16,6 +16,7 @@ protected:
 
 public:
     Player(const std::string& name, char gender);
+    std::string toString() const;
     void gainXP(int amount);
     void checkLevel();
     int getHP() const;

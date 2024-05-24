@@ -19,7 +19,7 @@ public:
     virtual void ChooseType(const std::string &type);
 
     virtual void evolve() =0;
-    virtual int  useAbility();    
+    virtual int  useAbility() =0;    
     void setName(const std::string& name);
     
     std::string getName() const{
@@ -52,24 +52,24 @@ public:
 };
 
 //Bulbasaur class
-class BulbasaurLine: public Pokemon{
-public:
+// class BulbasaurLine: public Pokemon{
+// public:
 
-    BulbasaurLine(): Pokemon("Bulbasaur", "Grass", 45, 49, 49, 65, 65){}
-    void evolve() override; // todo
-    int useAbility() override; //todo
-};
+//     BulbasaurLine(): Pokemon("Bulbasaur", "Grass", 45, 49, 49, 65, 65){}
+//     void evolve() override; // todo
+//     int useAbility() override; //todo
+// };
 
 
 //SquirtleLine class
-class SquirtleLine: public Pokemon{
+// class SquirtleLine: public Pokemon{
 
-public:
-    SquirtleLine(): Pokemon("Squirtle", "Water", 44, 48, 65, 50, 64){}
-    //~SquirtleLine();
-    void evolve() override;
-    int useAbility() override;
-};
+// public:
+//     SquirtleLine(): Pokemon("Squirtle", "Water", 44, 48, 65, 50, 64){}
+//     //~SquirtleLine();
+//     void evolve() override;
+//     int useAbility() override;
+// };
 
 
 

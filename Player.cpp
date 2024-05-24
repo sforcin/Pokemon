@@ -44,3 +44,7 @@ bool Player::removeItem(const std::string& item){
 int Player::getXP() const{
     return XP;
 }
+
+std::string Player::toString() const {
+    return "Name: " + Name + ", Gender: " + Gender;
+}

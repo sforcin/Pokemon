@@ -1,7 +1,7 @@
 #include "Game.h"
 
-Game::Game() {
-
+Game::Game() : player("", ' ') {
+    isNewGame = true;
 }
 
 void Game::saveGame(string saveFileName) {

@@ -6,10 +6,10 @@ using namespace std;
 
 //constructor made in header file
 
-Pokemon::~Pokemon(){
-  //  Name = "unknown";
-    //Type = "unknown";
-}
+// Pokemon::~Pokemon(){
+//   //  Name = "unknown";
+//     //Type = "unknown";
+// }
 
 void Pokemon::ChooseType(const std::string &type){
     Type = type;
@@ -35,4 +35,8 @@ void CharmanderLine::evolve(){
         std::cout<< "Evolved into Charmeleon";
 
     }
+}
+
+int CharmanderLine::useAbility() {
+    return Attack;
 }
