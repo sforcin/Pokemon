@@ -40,3 +40,7 @@ bool Player::removeItem(const std::string& item){
     }
     return false; //if the item is not in the inventory
 }
+
+int Player::getXP() const{
+    return XP;
+}

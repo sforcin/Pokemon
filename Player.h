@@ -6,7 +6,7 @@
 #include "item.h"
 
 class Player{
-private:
+protected:
     std:: string Name;
     char Gender;
     int XP;
@@ -22,6 +22,7 @@ public:
     void addItem(const Item& item);
     bool removeItem(const std::string& item);
     void listItems() const;
+    int getXP() const;
 
 };
 
