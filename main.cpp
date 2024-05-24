@@ -33,8 +33,10 @@ int main() {
             playGame(myGame);
             break;
         case 3: // view all games
+            cout << "Not Implemented Yet" << endl;
             break;
         case 4: // pokedex
+            cout << "Not Implemented Yet" << endl;
             break;
     }
 
