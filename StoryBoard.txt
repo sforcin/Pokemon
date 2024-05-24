@@ -49,3 +49,20 @@ Player will be a trainer (only option connected to player)
 Action:  Use methods defined in Trainer class
 
 
+OPTION A: (start new game) 
+Game starts. Maybe place a “press any key to start”, or use some sort of input from the user.
+Output first menu: “Hello, welcome Pokémon explorer. What is your name?”, 
+Get input for name 
+Welcome the user, then ask the user to pick a pokemon character to start with. Then we can personalize the intro with the chosen character.
+Output intro story: 
+  "Congratulations, [User's Name]! You've chosen [Pokémon Name]." "Your journey begins now. Let's dive into the world of Pokémon!"
+Intro Story
+"You wake up in your cozy little town of Pallet Town. It's a bright and sunny day, perfect for starting your adventure."
+"Professor Oak, the town's Pokémon expert, has invited you to his lab to give you your first Pokémon."
+"You hurry over to the lab, excited and nervous about what lies ahead."
+Get user input to continue
+"With your new Pokémon by your side, you step out of the lab, ready to explore the world and become a Pokémon Master."
+"Your first task is to travel to Viridian City and meet with your first rival battle!"
+Get user input to continue
+
+
