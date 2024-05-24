@@ -106,6 +106,59 @@ void playGame(Game &myGame, Display &display) {
     
     // if game is being resumed, the player data is already set
 
-    
+    bool loop = true;
+    while (loop) {
+
+    string input = "";
+    if (input != "next" && input != "pause") {
+        cout << "'next' for next turn, 'pause' for pause menu" << endl;
+        cin >> input;
+    }
+
+    //
+    // PAUSE MENU IMPLEMENTATION
+    //
+
+    if (input == "pause") { // pause/settings menu
+        display.pauseMenu.print();
+        int option = 0;
+        bool validOption = false;
+        while (!validOption) {
+            cout << "$:";
+            cin >> option;
+            validOption = true; // setup for if not the default case
+            switch(option) {
+                default:
+                    validOption = false; // if the option isn't recognized
+                    break;
+                case 1:
+                    cout << "Don't know how to pause game\nResuming game lmao" << endl;
+                    break;
+                case 2:
+                    cout << "This feature has been removed\nResuming game lmao" << endl;
+                    break;
+                case 3:
+                    cout << "Delete Game" << endl;
+                    cout << "Will implement something better later\nFor now, exiting loop." << endl;
+                    loop = false;
+                    break;
+                case 4:
+                    cout << "Will implement saving game later\n for now, resuming game" << endl;
+                    break;
+                case 5:
+                    break;
+            }
+        }
+        cout << "Resuming Game" << endl;
+
+    //
+    // THE ACTUAL GAME LOGIC
+    //
+
+    } else if (input == "next") { // do next turn
+        myGame.turn();
+    }
+
+    }
 
 }

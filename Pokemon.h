@@ -36,6 +36,9 @@ public:
         return HP;
     }
 
+    void hurt(int amount) {
+        HP -= amount;
+    }
 };
 
 

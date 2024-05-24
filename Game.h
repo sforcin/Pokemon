@@ -2,6 +2,7 @@
 
 #include <string>
 #include <iostream>
+#include <cstdlib>
 
 #include "Player.h"
 #include "Pokemon.h"
@@ -19,4 +20,6 @@ class Game {
         void saveGame(string filename);
         void loadGame(string filename);
 
+        void turn(); // where the game is played
+        void battle(); // mini boss battle
 };
