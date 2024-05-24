@@ -3,88 +3,73 @@
 
 #include <iostream>
 #include <string>
-
+//pokemon base class function
 class Pokemon{
 protected:
-    std::string Name = "undecided";
-    std::string Type = "undecided";
-
+    std::string Name;
+    std::string Type;
+    int HP;
+    int Attack;
+    int Defense;
+    int SpeedAttack;
+    int SpeedDefense;
 public:
+    Pokemon(const std::string& name, const std::string& type, int hp, int attack, int defense, int speedAttack, int speedDefense): Name(name), Type(type), HP(hp), Attack(attack), Defense(defense), SpeedAttack(speedAttack), SpeedDefense(speedDefense) {}
+    virtual ~Pokemon() {}
 
-    Pokemon(const std::string &name = "undefined", const std::string& type = "undefined"){}
-    virtual ~Pokemon();
+    virtual void evolve() =0;
+    virtual int  useAbility();    
+    void setName(const std::string& name){
+        Name = name;
+    }
+    std::string getName() const{
+        return Name;
+    }
+   
+    int  attack()const{
+        return Attack;
+    }
+    int  speedAttack() const{
+        return SpeedAttack;
+    }
+    int checkHP() const{
+        return HP;
+    }
 
-    void ChooseType(const std::string &type);
-    void setName(const std::string& name);
-    std::string getName() const;
-
-   virtual int  attack();
-   virtual int  speedAttack();
-   virtual int  checkHP() const;
-   virtual int  useAbility();
 };
 
 
-class CharmanderLine{
 
-private:
-    int HP = 39;
-    int attack = 52;
-    int defense = 49;
-    int speedAttackValue = 60;
-    int speedDefense = 50;
-
+//Charmander class
+class CharmanderLine: public Pokemon{
 public:
-    CharmanderLine(const std::string& name = "Charmander", const std::string& type = "Fire");
-    ~CharmanderLine();
-    void evolve();
-    int attack();
-    int speedAttack();
-    int checkHP() const;
-    int useAbility();
+    CharmanderLine(): Pokemon("Charmander", "Fire", 39, 52, 43, 60, 50){}
+    //~CharmanderLine();
+
+    void evolve() override; //todo
+    int useAbility() override; //todo
 
 };
 
-class BulbasaurLine{
-
-private:
-    int HP = 45;
-    int attack = 49;
-    int defense = 49;
-    int speedAttackValue = 65;
-    int speedDefense = 65;
-
+//Bulbasaur class
+class BulbasaurLine: public Pokemon{
 public:
-    BulbasaurLine(const std::string& name = "Bulbasaur", const std::string& type = "Grass");
-    ~BulbasaurLine();
-    void evolve();
-    int attack();
-    int speedAttack();
-    int checkHP() const;
-    int useAbility();
+
+    BulbasaurLine(): Pokemon("Bulbasaur", "Grass", 45, 49, 49, 65, 65){}
+    void evolve() override; // todo
+    int useAbility() override; //todo
 };
 
 
-class SquirtleLine{
-
-private:
-    int HP = 44;
-    int attack = 48;
-    int defense = 65;
-    int speedAttackValue = 50;
-    int speedDefense = 64;
+//SquirtleLine class
+class SquirtleLine: public Pokemon{
 
 public:
-    SquirtleLine(const std::string& name = "Squirtle", const std::string& type = "Water");
-    ~SquirtleLine();
-    void evolve();
-    int attack();
-    int speedAttack();
-    int checkHP() const;
-    int useAbility();
+    SquirtleLine(): Pokemon("Squirtle", "Water", 44, 48, 65, 50, 64){}
+    //~SquirtleLine();
+    void evolve() override;
+    int useAbility() override;
 };
-
-
 
 
 
