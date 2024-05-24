@@ -9,7 +9,7 @@ void playGame(Game *myGame);
 
 int main() {
     Display display;
-    Game *myGame = new Game();
+    Game *myGame = new Game(); // passing by reference for playGame was giving too many issues (revisit this later)
 
     display.mainMenu.print();
     cout << "$:";
