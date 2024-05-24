@@ -8,7 +8,7 @@ void DisplayMainMenu::print() const {
     cout << border << endl;
     cout << indent << "    MAIN MENU:" << endl;
     for (int i = 0; i < options.size(); i++) {
-        cout << indent << i << ". " << options.at(i) << endl;
+        cout << indent << (i + 1) << ". " << options.at(i) << endl;
     }
     cout << border << endl;
 }
@@ -33,7 +33,7 @@ void DisplayCharacterSelection::print() const {
     cout << border << endl;
     cout << message << endl;
     for (int i = 0; i < options.size(); i++) {
-        cout << indent << i << ". " << options.at(i) << endl;
+        cout << indent << (i + 1) << ". " << options.at(i) << endl;
     }
     cout << border << endl;
 }
@@ -50,7 +50,7 @@ void DisplayPauseMenu::print() const {
     cout << border << endl;
     cout << indent << "    Settings:" << endl;
     for (int i = 0; i < options.size(); i++) {
-        cout << indent << i << ". " << options.at(i) << endl;
+        cout << indent << (i + 1) << ". " << options.at(i) << endl;
     }
     cout << border << endl;    
 }
