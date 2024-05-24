@@ -15,7 +15,7 @@ class Display {
 
 class DisplayMainMenu {
     private:
-        const vector<string> options{"Start new game"}; // list of options
+        const vector<string> options{"Start new game", "Resume game", "View all games", "Pokedex!"}; // list of options
         const string border = "----------------------------"; // the border to be printed before and after the menu
         const string indent = "        "; // the indent to print before each line, excluding the border lines
         void print() const;
@@ -39,6 +39,17 @@ class DisplayCharacterSelection {
         const string indent = "        "; // the indent to print before each line, excluding the border lines
         void print() const;
     friend class Display;
+    public:
+        vector<string> getOptions() const;
+};
+
+class DisplayPauseMenu {
+    private:
+        const vector<string> options{"Pause Game", "Edit / Add Characters", "Delete Game", "Save & Exit", "Resume Game"};
+        const string border = "----------------------------"; // the border to be printed before and after the menu
+        const string indent = "        "; // the indent to print before each line, excluding the border lines        
+        void print() const;
+        friend class Display;
     public:
         vector<string> getOptions() const;
 };

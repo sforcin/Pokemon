@@ -41,3 +41,20 @@ void DisplayCharacterSelection::print() const {
 vector<string> DisplayCharacterSelection::getOptions() const {
     return options;
 }
+
+//
+// PAUSE MENU SCREEN CLASS
+//
+
+void DisplayPauseMenu::print() const {
+    cout << border << endl;
+    cout << indent << "    Settings:" << endl;
+    for (int i = 0; i < options.size(); i++) {
+        cout << indent << i << ". " << options.at(i) << endl;
+    }
+    cout << border << endl;    
+}
+
+vector<string> DisplayPauseMenu::getOptions() const {
+    return options;
+}
