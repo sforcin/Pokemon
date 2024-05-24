@@ -9,7 +9,7 @@ using namespace std;
 class DisplayMainMenu {
     private:
         const vector<string> options{"Start new game", "Resume game", "View all games", "Pokedex!"}; // list of options
-        const string border = "----------------------------"; // the border to be printed before and after the menu
+        const string border = "---------------------------------"; // the border to be printed before and after the menu
         const string indent = "        "; // the indent to print before each line, excluding the border lines
         friend class Display;
     public:
@@ -29,7 +29,7 @@ class DisplayCharacterSelection {
     private:
         const string message = "Choose your starter pokemon!:";
         const vector<string> options{"Charmander", "Squirtle", "Bulbasaur"};
-        const string border = "----------------------------"; // the border to be printed before and after the menu
+        const string border = "---------------------------------"; // the border to be printed before and after the menu
         const string indent = "        "; // the indent to print before each line, excluding the border lines
     friend class Display;
     public:
@@ -39,8 +39,8 @@ class DisplayCharacterSelection {
 
 class DisplayPauseMenu {
     private:
-        const vector<string> options{"Pause Game", "Edit / Add Characters", "Delete Game", "Save & Exit", "Resume Game"};
-        const string border = "----------------------------"; // the border to be printed before and after the menu
+        const vector<string> options{"Edit / Add Characters", "Delete Game", "Save & Exit", "Resume Game"};
+        const string border = "---------------------------------"; // the border to be printed before and after the menu
         const string indent = "        "; // the indent to print before each line, excluding the border lines        
         friend class Display;
     public:

@@ -51,55 +51,59 @@ void playGame(Game &myGame, Display &display) {
         bool loop = true;
         while (loop) {
 
-        display.welcomeScreen.print();
-        cout << "$:";
-        string playerName = "";
-        cin >> playerName;
+            display.welcomeScreen.print();
+            cout << "$:";
+            string playerName = "";
+            getline(cin, playerName);
+            getline(cin, playerName);
 
-        myGame.player = Player(playerName, 'X');
+            myGame.player = Player(playerName, 'X');
 
-        display.characterSelection.print();
-        cout << "$:";
-        int option = 0;
-        cin >> option;
-        while (option < 1 || 3 < option) { // invalid input
-            cout << "Unknown Option!!!" << endl << endl;
             display.characterSelection.print();
+            cout << "$:";
+            int option = 0;
             cin >> option;
-        }
+            while (option < 1 || 3 < option) { // invalid input
+                cout << "Unknown Option!!!" << endl << endl;
+                display.characterSelection.print();
+                cin >> option;
+            }
 
-        cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
-        Pokemon *selection = new CharmanderLine();
-        switch(option) {
-            case 1:
-                // selection = new CharmanderLine();
-                break;
-            case 2:
-                // selection = new SquirtleLine();
-                break;
-            case 3:
-                // selection = new BulbasaurLine();
-                break;
-        }
-        myGame.pokes.push_back(selection); // add selected started pokemon to player profile
+            cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
+            Pokemon *selection = new CharmanderLine();
+            switch(option) {
+                case 1:
+                    // selection = new CharmanderLine();
+                    break;
+                case 2:
+                    // selection = new SquirtleLine();
+                    break;
+                case 3:
+                    // selection = new BulbasaurLine();
+                    break;
+            }
+            myGame.pokes.push_back(selection); // add selected started pokemon to player profile
 
-        cout << endl;
-        cout << "Profile:" << endl;
-        cout << "    Player: " << myGame.player.toString() << endl;
-        cout << "    Starter Pokemon: " << myGame.pokes.at(0)->getName() << endl;
+            cout << endl;
+            cout << "Profile:" << endl;
+            cout << "    Player: " << myGame.player.toString() << endl;
+            cout << "    Starter Pokemon: " << myGame.pokes.at(0)->getName() << endl;
 
-        string input = "";
-        cout << endl;
-        while (input != "Yes" && input != "No") {
+            string input = "";
             cout << "Confirm Options? (Yes/No):";
-            cin >> input;
-        }
+            cout << endl;
 
-        if (input == "Yes") {
-            loop = false; // exit loop
-        } else {
-            // stay in loop
-        }
+            cin >> input; 
+            while ((input != "Yes" && input != "yes") && (input != "No" && input != "no")) {
+                cout << "Confirm Options? (Yes/No):";
+                cin >> input;
+            }
+
+            if (input == "Yes" || input == "yes") {
+                loop = false; // exit loop
+            } else {
+                // stay in loop
+            }
         }
 
     }
@@ -132,20 +136,17 @@ void playGame(Game &myGame, Display &display) {
                     validOption = false; // if the option isn't recognized
                     break;
                 case 1:
-                    cout << "Don't know how to pause game\nResuming game lmao" << endl;
-                    break;
-                case 2:
                     cout << "This feature has been removed\nResuming game lmao" << endl;
                     break;
-                case 3:
+                case 2:
                     cout << "Delete Game" << endl;
                     cout << "Will implement something better later\nFor now, exiting loop." << endl;
                     loop = false;
                     break;
-                case 4:
+                case 3:
                     cout << "Will implement saving game later\n for now, resuming game" << endl;
                     break;
-                case 5:
+                case 4:
                     break;
             }
         }
