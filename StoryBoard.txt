@@ -1,10 +1,10 @@
 Storyline: 
 1. Game starts. 
   Display main menu (Reference Screen layout)
-  Action: User selects an option. Start new game leads to Welcome screen
+  Action: User selects an option. Start new game leads to Welcome screen (done)
 
 2. Welcome screen: 
-  Display: “Hello, welcome to the world of Pokemon [FIXME if needed]! Before you begin your adventure, tell us your name”
+  Display: “Hello, welcome to the world of Pokemon [FIXME if needed]! Before you begin your adventure, tell us your name” (im gonna do this rq)
   Input: User types their name
   Action: store the name is memory for future reference
 
