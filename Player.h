@@ -12,7 +12,7 @@ protected:
     int XP;
     int Level;
     int HP;
-    std::vector<Item> Inventory;
+    std::vector<Item> Inventory; //Inventory vector
 
 public:
     Player(const std::string& name, char gender);
@@ -24,6 +24,7 @@ public:
     bool removeItem(const std::string& item);
     void listItems() const;
     int getXP() const;
+    std::string getName() const{return Name;}
 
 };
 

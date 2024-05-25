@@ -96,7 +96,12 @@ void playGame(Game &myGame, Display &display) {
         }
 
         if (input == "Yes") {
+            string filename;
+            cout << "Enter file name to save yout game: ";
+            cin>> filename;
+            myGame.saveGame(filename);
             loop = false; // exit loop
+
         } else {
             // stay in loop
         }
