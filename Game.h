@@ -22,4 +22,5 @@ class Game {
 
         void turn(); // where the game is played
         void battle(); // mini boss battle
+        //void saveGame(const std::string& filename); //save game into a file
 };
