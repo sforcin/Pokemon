@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-#include "Display.h"
-#include "Game.h"
-#include "Pokemon.h"
+#include "../includeFiles/Display.h"
+#include "../includeFiles/Game.h"
+#include "../includeFiles/Pokemon.h"
 
 using namespace std;
 

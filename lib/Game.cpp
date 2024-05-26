@@ -1,7 +1,7 @@
-#include "Game.h"
 #include <fstream>
 #include <iostream>
-#include "Pokemon.h"
+#include "../includeFiles/Game.h"
+#include "../includeFiles/Pokemon.h"
 
 
 Game::Game() : player("", ' ') {
