@@ -82,16 +82,7 @@ Diagram is up to date with corrections
  1. Single Responsability Principe (SPR): I moved shared functionatilies such as the functions 'setName', 'getName', 'attack', and 'speedAttack' into the base class 'Pokemon', so each subclass has fewer responsabilities. This change ensures that subclasses are only responsible for their specific differences or extension, not common functionalities. This helped us code better by only having to write some functionalities and functions once, instead of having to implement them multiple times.
  2. Open/Closed Principle (OCP): I added an 'evolve' function, which will allow evolution behaviors to be added or changed specifically to each subclass. With this addition, the design encourages software entities to be open for extension but closed for modification. It also allows each Pokemon subclass to have its unique evolution behavior that could be extended without altering the codebase of other subclasses. This change increases flexibility and scalability of the game, and enables future modifications by isolating specific evolutionaty changes. These changes allowed us to write better code by sharing functionality across classes.
  3. Liskov Substitution Principle(LSP): By ensuring all Pokemon related methods are being implemented in the base class and overriden in subclasses, we reinforced the principle that subclasses can replace their base class without affecting the program. This change also proves that the objects in the subclasses inherited from the Pokemon class has access to every function and member variable present in member class. (Ensures proper and reliable polymorphic behavior acress the game's features).
- > * How did you apply it? i.e. describe the change. //done
- > * How did this change help you write better code? //done
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history. //done, project board updated with new user stories
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
+
 
  > ## Final deliverable
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
