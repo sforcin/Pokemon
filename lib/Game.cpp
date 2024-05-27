@@ -1,7 +1,9 @@
 #include <fstream>
 #include <iostream>
+#include <unistd.h> 
 #include "../includeFiles/Game.h"
 #include "../includeFiles/Pokemon.h"
+#include  "../includeFiles/Display.h"
 
 
 Game::Game() : player("", ' ') {
@@ -36,6 +38,19 @@ void Game::turn() {
         battle();
     }
 }
+
+
+void Game::part1(){ 
+
+    //cout << "Welcome Trainer " <<  player.toString() << " to the world of Pokemon, where /n every Trainer chooses their journey. Or so we thought." << endl;  
+    
+    type_text("Welcome to the world of Pokemon New trainer! Congrats on picking your first Pokemon.");
+    cout << endl; 
+
+
+    part1Complete = true; // when game is reloaded, we will know which parts were completed based on bools for each part
+}
+
 
 void Game::battle() {
     int enemyHealth = rand() % 75;
@@ -75,4 +90,25 @@ void Game::battle() {
     } else { // your pokemon is dead
         cout << "You Won This Battle!!! :)" << endl;
     }
+}
+
+
+
+
+
+
+
+
+void type_text(const string& text) //SOURCED FROM CPLUSPLUS.COM
+{
+	// loop through each character in the text
+	for (std::size_t i = 0; i < text.size(); ++i)
+	{
+		// output one character
+		// flush to make sure the output is not delayed
+		std::cout << text[i] << std::flush;
+		
+		// sleep 60 milliseconds
+		usleep(60000); // use Sleep on windows
+	}
 }

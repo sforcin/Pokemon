@@ -12,3 +12,9 @@ std::string Item::getDescription() const{
 std::string Item::getName() const{
     return name;
 }
+
+/*ITEMS TO CREATE: 
+- pokeballs (different types)
+- power up foods (for XP/health)
+- collectables indicating what part of game u r at  
+*/

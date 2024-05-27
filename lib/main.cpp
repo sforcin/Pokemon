@@ -51,119 +51,125 @@ void playGame(Game &myGame, Display &display) {
         bool loop = true;
         while (loop) {
 
-        display.welcomeScreen.print();
-        cout << "$:";
-        string playerName = "";
-        cin >> playerName;
+            display.welcomeScreen.print();
+            cout << "$:";
+            string playerName = "";
+            cin >> playerName;
 
-        myGame.player = Player(playerName, 'X');
+            myGame.player = Player(playerName, 'X');
 
-        display.characterSelection.print();
-        cout << "$:";
-        int option = 0;
-        cin >> option;
-        while (option < 1 || 3 < option) { // invalid input
-            cout << "Unknown Option!!!" << endl << endl;
             display.characterSelection.print();
+            cout << "$:";
+            int option = 0;
             cin >> option;
-        }
 
-        cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
-        Pokemon *selection = new CharmanderLine();
-        switch(option) {
-            case 1:
-                // selection = new CharmanderLine();
-                break;
-            case 2:
-                // selection = new SquirtleLine();
-                break;
-            case 3:
-                // selection = new BulbasaurLine();
-                break;
-        }
-        myGame.pokes.push_back(selection); // add selected started pokemon to player profile
+            while (option < 1 || 3 < option) { // invalid input
+                cout << "Unknown Option!!!" << endl << endl;
+                display.characterSelection.print();
+                cin >> option;
+            }
 
-        cout << endl;
-        cout << "Profile:" << endl;
-        cout << "    Player: " << myGame.player.toString() << endl;
-        cout << "    Starter Pokemon: " << myGame.pokes.at(0)->getName() << endl;
+            cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
+            Pokemon *selection = new CharmanderLine();
 
-        string input = "";
-        cout << endl;
-        while (input != "Yes" && input != "No") {
-            cout << "Confirm Options? (Yes/No):";
-            cin >> input;
-        }
+            switch(option) {
+                case 1:
+                    // selection = new CharmanderLine();
+                    break;
+                case 2:
+                    // selection = new SquirtleLine();
+                    break;
+                case 3:
+                    // selection = new BulbasaurLine();
+                    break;
+            }
 
-        if (input == "Yes") {
-            string filename;
-            cout << "Enter file name to save yout game: ";
-            cin>> filename;
-            myGame.saveGame(filename);
-            loop = false; // exit loop
+            myGame.pokes.push_back(selection); // add selected started pokemon to player profile
 
-        } else {
-            // stay in loop
-        }
+            cout << endl;
+            cout << "Profile:" << endl;
+            cout << "    Player: " << myGame.player.toString() << endl;
+            cout << "    Starter Pokemon: " << myGame.pokes.at(0)->getName() << endl;
+
+            char input = ' ';
+            cout << endl;
+
+            while (tolower(input) != 'y' && tolower(input) != 'n') {
+                cout << "Confirm Options? (Y/N):";
+                cin >> input;
+            }
+
+            if (tolower(input) == 'y') {
+                string filename;
+                cout << "Choose a name to save your game under: ";
+                cin>> filename;
+                myGame.saveGame(filename);
+                loop = false; // exit loop
+
+            } 
+            
+            else {
+                // maybe make a change characteristics function and call
+            }
         }
 
     }
     
     // if game is being resumed, the player data is already set
 
-    bool loop = true;
-    while (loop) {
+        bool loop = true;
+        while (loop) {
 
-    string input = "";
-    if (input != "next" && input != "pause") {
-        cout << "'next' for next turn, 'pause' for pause menu" << endl;
-        cin >> input;
-    }
-
-    //
-    // PAUSE MENU IMPLEMENTATION
-    //
-
-    if (input == "pause") { // pause/settings menu
-        display.pauseMenu.print();
-        int option = 0;
-        bool validOption = false;
-        while (!validOption) {
-            cout << "$:";
-            cin >> option;
-            validOption = true; // setup for if not the default case
-            switch(option) {
-                default:
-                    validOption = false; // if the option isn't recognized
-                    break;
-                case 1:
-                    cout << "Don't know how to pause game\nResuming game lmao" << endl;
-                    break;
-                case 2:
-                    cout << "This feature has been removed\nResuming game lmao" << endl;
-                    break;
-                case 3:
-                    cout << "Delete Game" << endl;
-                    cout << "Will implement something better later\nFor now, exiting loop." << endl;
-                    loop = false;
-                    break;
-                case 4:
-                    cout << "Will implement saving game later\n for now, resuming game" << endl;
-                    break;
-                case 5:
-                    break;
-            }
+        string input = "";
+        if (input != "next" && input != "pause") {
+            cout << "'next' for next turn, 'pause' for pause menu" << endl;
+            cin >> input;
         }
-        cout << "Resuming Game" << endl;
 
-    //
-    // THE ACTUAL GAME LOGIC
-    //
+        //
+        // PAUSE MENU IMPLEMENTATION
+        //
 
-    } else if (input == "next") { // do next turn
-        myGame.turn();
-    }
+        if (input == "pause") { // pause/settings menu
+            display.pauseMenu.print();
+            int option = 0;
+            bool validOption = false;
+            while (!validOption) {
+                cout << "$:";
+                cin >> option;
+                validOption = true; // setup for if not the default case
+                switch(option) {
+                    default:
+                        validOption = false; // if the option isn't recognized
+                        break;
+                    case 1:
+                        cout << "Don't know how to pause game\nResuming game lmao" << endl;
+                        break;
+                    case 2:
+                        cout << "This feature has been removed\nResuming game lmao" << endl;
+                        break;
+                    case 3:
+                        cout << "Delete Game" << endl;
+                        cout << "Will implement something better later\nFor now, exiting loop." << endl;
+                        loop = false;
+                        break;
+                    case 4:
+                        cout << "Will implement saving game later\n for now, resuming game" << endl;
+                        break;
+                    case 5:
+                        break;
+                }
+            }
+            cout << "Resuming Game" << endl;
 
-    }
+        //
+        // THE ACTUAL GAME LOGIC
+        //
+
+        } else if (input == "next") { // do next turn
+            myGame.part1();
+        }
+
+     }
 
 }
