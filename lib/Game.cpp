@@ -40,18 +40,6 @@ void Game::turn() {
 }
 
 
-void Game::part1(){ 
-
-    //cout << "Welcome Trainer " <<  player.toString() << " to the world of Pokemon, where /n every Trainer chooses their journey. Or so we thought." << endl;  
-    
-    type_text("Welcome to the world of Pokemon New trainer! Congrats on picking your first Pokemon.");
-    cout << endl; 
-
-
-    part1Complete = true; // when game is reloaded, we will know which parts were completed based on bools for each part
-}
-
-
 void Game::battle() {
     int enemyHealth = rand() % 75;
 
@@ -93,9 +81,19 @@ void Game::battle() {
 }
 
 
+void Game::part1(){ 
+
+    if(part1Complete == true){ //if part1 is completed by user, we would know and exit function 
+        return;
+    }
+
+    type_text("Welcome to the world of Pokemon New trainer!");
+    type_text(" Congrats on picking your first Pokemon.");
+    cout << endl; 
 
 
-
+    part1Complete = true; // when game is reloaded, we will know which parts were completed based on bools for each part
+}
 
 
 
@@ -109,6 +107,7 @@ void type_text(const string& text) //SOURCED FROM CPLUSPLUS.COM
 		std::cout << text[i] << std::flush;
 		
 		// sleep 60 milliseconds
-		usleep(60000); // use Sleep on windows
+		usleep(40000); // use Sleep on windows
 	}
+     usleep(150000);
 }

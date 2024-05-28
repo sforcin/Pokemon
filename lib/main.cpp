@@ -117,8 +117,8 @@ void playGame(Game &myGame, Display &display) {
     
     // if game is being resumed, the player data is already set
 
-        bool loop = true;
-        while (loop) {
+    bool loop = true;
+    while (loop) {
 
         string input = "";
         if (input != "next" && input != "pause") {
@@ -126,9 +126,9 @@ void playGame(Game &myGame, Display &display) {
             cin >> input;
         }
 
-        //
-        // PAUSE MENU IMPLEMENTATION
-        //
+    //
+    // PAUSE MENU IMPLEMENTATION
+    //
 
         if (input == "pause") { // pause/settings menu
             display.pauseMenu.print();
@@ -161,15 +161,15 @@ void playGame(Game &myGame, Display &display) {
                 }
             }
             cout << "Resuming Game" << endl;
+        }
+    //
+    // THE ACTUAL GAME LOGIC
+    //
 
-        //
-        // THE ACTUAL GAME LOGIC
-        //
-
-        } else if (input == "next") { // do next turn
+        else if (input == "next") { // do next turn
             myGame.part1();
         }
 
-     }
+    }
 
 }
