@@ -1,5 +1,4 @@
 #include "../includeFiles/Display.h"
-
 //
 // MAIN MENU CLASS
 //
@@ -58,3 +57,7 @@ void DisplayPauseMenu::print() const {
 vector<string> DisplayPauseMenu::getOptions() const {
     return options;
 }
+
+//
+// DISPLAY CLASS
+//
