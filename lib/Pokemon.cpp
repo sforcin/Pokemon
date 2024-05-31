@@ -4,9 +4,8 @@
 
 using namespace std;
 
-//constructor made in header file
 
-// Pokemon::~Pokemon(){
+
 //   //  Name = "unknown";
 //     //Type = "unknown";
 // }
