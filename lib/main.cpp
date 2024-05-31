@@ -1,3 +1,6 @@
+//MAINCPP
+
+
 #include <iostream>
 #include <string>
 
@@ -70,7 +73,7 @@ void playGame(Game &myGame, Display &display) {
             }
 
             cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
-            Pokemon *selection = new CharmanderLine();
+            Pokemon *selection = new CharmanderLine(); //DO WE USE delete[] when destructing this?????????????????????????????/ cause we are using the new operator 
 
             switch(option) {
                 case 1:
