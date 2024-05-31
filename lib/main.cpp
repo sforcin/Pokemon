@@ -54,7 +54,8 @@ void playGame(Game &myGame, Display &display) {
             display.welcomeScreen.print();
             cout << "$:";
             string playerName = "";
-            cin >> playerName;
+            getline(cin, playerName);
+            getline(cin, playerName);
 
             myGame.player = Player(playerName, 'X');
 
