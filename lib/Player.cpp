@@ -38,45 +38,45 @@ void getItemDescription(string& item) {
     }
 }
 
-void Player::addItem(const string& item){
-    Inventory.push_back(item);
-}
+// //void Player::addItem(const string& item){
+//     Inventory.push_back(item);
+// }
 
-bool Player::removeItem(const std::string& item){
-    for(size_t i =0; i< Inventory.size();++i){
-        if(Inventory.at(i)==item){
-            Inventory.erase(Inventory.begin()+i); //remove item at index i
-            return true;
-        }
-    }
-    cout << "Item is not in inventory!"<< endl; 
-    return false; 
-}
+// bool Player::removeItem(const std::string& item){
+//     for(size_t i =0; i< Inventory.size();++i){
+//         if(Inventory.at(i)==item){
+//             Inventory.erase(Inventory.begin()+i); //remove item at index i
+//             return true;
+//         }
+//     }
+//     cout << "Item is not in inventory!"<< endl; 
+//     return false; 
+// }
 
 //create an overload with no pokemon pass through if it needs to be appluied to player 
-void Player::useItem(const std::string& itemName, Pokemon &pokemon, vector<Pokemon*> pokes) {
-    if(itemName == "Potion"){
-        pokemon.heal(20);
-        cout << "You used a Potion. It heals your Pokemon by 20 HP." << endl;
-    }
+// void Player::useItem(const std::string& itemName, Pokemon &pokemon, vector<Pokemon*> pokes) {
+//     if(itemName == "Potion"){
+//         pokemon.heal(20);
+//         cout << "You used a Potion. It heals your Pokemon by 20 HP." << endl;
+//     }
 
-    else if (itemName == "PokeBall"){
-        cout << "You used a Poké Ball. Attempting to catch the wild Pokemon." << endl;
-        srand(time(0));
-        int random = 1+ rand() % 10;
+//     else if (itemName == "PokeBall"){
+//         cout << "You used a Poké Ball. Attempting to catch the wild Pokemon." << endl;
+//         srand(time(0));
+//         int random = 1+ rand() % 10;
 
-        if( random>=7){
-            pokes.push_back(&pokemon);
-            cout << "Congrats! You've caught " << pokemon.getName() << "!" << endl; 
-        }
-        else{
-            cout << "Unfortunately, " << pokemon.getName() << "got away :(" << endl; 
-        }
-    }
+//         if( random>=7){
+//             pokes.push_back(&pokemon);
+//             cout << "Congrats! You've caught " << pokemon.getName() << "!" << endl; 
+//         }
+//         else{
+//             cout << "Unfortunately, " << pokemon.getName() << "got away :(" << endl; 
+//         }
+//     }
 
-    removeItem(itemName);
-    return; 
-}
+//     removeItem(itemName);
+//     return; 
+// }
 
 int Player::getXP() const{
     return XP;

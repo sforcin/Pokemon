@@ -103,9 +103,9 @@ void Game::part1(){
     type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. Congrats!");
     cout << endl; 
     cout << endl; 
-    type_text("Professor Maple: 'Ah, ", player.getName());
+   // type_text("Professor Maple: 'Ah, ", player.getName());
     type_text(", it's great to see you again! I had three Pokemon for you to choose from: Bulbasaur, Charmander, and Squirtle.");
-    type_text("Didn't you choose ", starterPoke->getName());
+   // type_text("Didn't you choose ", starterPoke->getName());
     type_text("?");
     cout << endl; 
     type_text("(Y/N): ");
@@ -114,7 +114,7 @@ void Game::part1(){
 
     char pokechoice = 'x'; 
     while (tolower(choice) == 'n'){
-        type_text("I see I've made a mistake. " , "I had three Pokemon for you to choose from: Bulbasaur, Charmander, and Squirtle.");
+       // type_text("I see I've made a mistake. " , "I had three Pokemon for you to choose from: Bulbasaur, Charmander, and Squirtle.");
         cout << endl;
         type_text("Which pokemon would you like? (C - Charmander / B - Bulbasaur / S - Squirtle): ");
         cin >> pokechoice;
@@ -130,14 +130,14 @@ void Game::part1(){
         if(tolower(pokechoice) == 'c') {
             starterPoke = new CharmanderLine();
         } else if(tolower(pokechoice) == 'b') {
-            starterPoke = new BulbasaurLine();
+            //starterPoke = new BulbasaurLine();
         } else if(tolower(pokechoice) == 's') {
-            starterPoke = new SquirtleLine();
+           // starterPoke = new SquirtleLine();
         }
 
         pokes[0] = starterPoke;
 
-        type_text("Now then new trainer, your new chosen pokemon is: ", starterPoke->getName());
+       // type_text("Now then new trainer, your new chosen pokemon is: ", starterPoke->getName());
         type_text(". Is this correct?");
         cout << endl; 
         type_text("(Y/N): ");

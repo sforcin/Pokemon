@@ -42,38 +42,38 @@ int CharmanderLine::useAbility() {
 
 //Bulb-Line functions
 
-void BulbasaurLine::evolve(){
-    if(Attack>= 60 && Defense >=50){
-        Name = "Ivysaur";
-        HP= 60;
-        Attack = 62;
-        Defense = 63;
-        SpeedAttack = 80;
-        SpeedDefense = 80;
-        std::cout<< "Evolution Complete!";
+// void BulbasaurLine::evolve(){
+//     if(Attack>= 60 && Defense >=50){
+//         Name = "Ivysaur";
+//         HP= 60;
+//         Attack = 62;
+//         Defense = 63;
+//         SpeedAttack = 80;
+//         SpeedDefense = 80;
+//         std::cout<< "Evolution Complete!";
 
-    }
-}
+//     }
+// }
 
-int BulbasaurLine::useAbility() {
-    return Attack;
-}
+// int BulbasaurLine::useAbility() {
+//     return Attack;
+// }
 
 //Squirtle-Line functions
 
-void SquirtleLine::evolve(){
-    if(Attack>= 60 && Defense >=50){
-        Name = "Wartortle";
-        HP= 59;
-        Attack = 63;
-        Defense = 80;
-        SpeedAttack = 65;
-        SpeedDefense = 80;
-        std::cout<< "Evolution Complete!";
+// void SquirtleLine::evolve(){
+//     if(Attack>= 60 && Defense >=50){
+//         Name = "Wartortle";
+//         HP= 59;
+//         Attack = 63;
+//         Defense = 80;
+//         SpeedAttack = 65;
+//         SpeedDefense = 80;
+//         std::cout<< "Evolution Complete!";
 
-    }
-}
+//     }
+// }
 
-int SquirtleLine::useAbility() {
-    return Attack;
-}
+// int SquirtleLine::useAbility() {
+//     return Attack;
+// }
