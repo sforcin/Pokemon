@@ -1,6 +1,3 @@
-//MAINCPP
-
-
 #include <iostream>
 #include <string>
 
