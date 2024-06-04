@@ -25,12 +25,24 @@ public:
     std::string getName() const{
         return Name;
     }
+
+    std::string getType() const{
+        return Type;
+    }
    
     int  attack()const{
         return Attack;
     }
+
+    int defense()const{
+        return Defense;
+    }
     int  speedAttack() const{
         return SpeedAttack;
+    }
+
+    int speedDefense() const{
+        return SpeedDefense;
     }
     int checkHP() const{
         return HP;
