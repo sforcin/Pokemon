@@ -1,6 +1,8 @@
 #include "../includeFiles/Player.h"
-#include  "../includeFiles/Pokemon.h"
+// #include "../includeFiles/Pokemon.h"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -25,21 +27,55 @@ int Player::getHP() const{
 
 }
 
+//ITEMS/INVENTORY FUNCTIONS ---------------------------------------------------------------------------------------------------------------------------------
+void getItemDescription(string& item) {
+    if(item == "Potion"){
+       cout << "The Potion Item heals a Pokemon by 20 HP <3" << endl;
+    }
 
-//implement add and remove items to the inventory
+    else if (item == "PokeBall"){
+        cout << "The PokeBall Item is used to catch wild Pokemon" << endl; 
+    }
+}
 
-void Player::addItem(const Item& item){
+void Player::addItem(const string& item){
     Inventory.push_back(item);
 }
 
 bool Player::removeItem(const std::string& item){
     for(size_t i =0; i< Inventory.size();++i){
-        if(Inventory[i].getName()==item){
+        if(Inventory.at(i)==item){
             Inventory.erase(Inventory.begin()+i); //remove item at index i
             return true;
         }
     }
-    return false; //if the item is not in the inventory
+    cout << "Item is not in inventory!"<< endl; 
+    return false; 
+}
+
+//create an overload with no pokemon pass through if it needs to be appluied to player 
+void Player::useItem(const std::string& itemName, Pokemon &pokemon, vector<Pokemon*> pokes) {
+    if(itemName == "Potion"){
+        pokemon.heal(20);
+        cout << "You used a Potion. It heals your Pokemon by 20 HP." << endl;
+    }
+
+    else if (itemName == "PokeBall"){
+        cout << "You used a Poké Ball. Attempting to catch the wild Pokemon." << endl;
+        srand(time(0));
+        int random = 1+ rand() % 10;
+
+        if( random>=7){
+            pokes.push_back(&pokemon);
+            cout << "Congrats! You've caught " << pokemon.getName() << "!" << endl; 
+        }
+        else{
+            cout << "Unfortunately, " << pokemon.getName() << "got away :(" << endl; 
+        }
+    }
+
+    removeItem(itemName);
+    return; 
 }
 
 int Player::getXP() const{
