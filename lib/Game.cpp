@@ -100,7 +100,7 @@ void Game::part1(){
     //TODO:insert ascii of transporting lol 
 
     type_text("Welcome to Pinewood Town, where your journey begins.");
-    type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. ", "Congrats!");
+    type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. Congrats!");
     cout << endl; 
     cout << endl; 
     type_text("Professor Maple: 'Ah, ", player.getName());
