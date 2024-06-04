@@ -3,7 +3,8 @@
 
 #include <string>
 #include <vector>
-#include "Item.h"
+#include "Pokemon.h"
+using namespace std; 
 
 class Player{
 protected:
@@ -12,21 +13,23 @@ protected:
     int XP;
     int Level;
     int HP;
-    std::vector<Item> Inventory; //Inventory vector
+    std::vector<string> Inventory; //Inventory vector
 
 public:
     Player(const std::string& name, char gender);
     std::string toString() const;
     void gainXP(int amount);
     void checkLevel();
-    int getHP() const;
-    void addItem(const Item& item);
-    bool removeItem(const std::string& item);
-    void listItems() const;
     int getXP() const;
     std::string getName() const{return Name;}
+    int getHP() const;
+
+    void getItemDescription(string& item);
+    void addItem(const string& item);
+    bool removeItem(const std::string& item);
+    void useItem(const std::string& item, Pokemon& pokemon, vector<Pokemon*> pokes);
+    void listItems() const;
+
 
 };
-
-
 #endif

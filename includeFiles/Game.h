@@ -1,4 +1,6 @@
-#pragma once
+
+#ifndef GAME_H
+#define GAME_H
 
 #include <string>
 #include <iostream>
@@ -30,3 +32,6 @@ class Game {
 };
 
  void type_text(const string& text);
+ void type_text(const string& text1, const string &text2);
+
+ #endif
