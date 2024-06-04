@@ -75,8 +75,19 @@ void Game::battle() {
     }
 
     cout << endl;
+    char choice; 
     if (enemyHealth <= 0) { // enemy is dead
-        cout << "You Won This Battle!!! :)" << endl;
+       type_text("You won this battle!! :)");
+       type_text("Do you want to try to catch this pokemon? (Y/N)");
+       cin >> choice; 
+
+       if(tolower(choice) == 'y'){
+        //call catch function here 
+       }
+       else{
+        type_text("You've decided not to catch this pokemon.");
+       }
+
     } else { // your pokemon is dead
         cout << "Enemy Won This Battle!!! :(" << endl;
     }
@@ -100,12 +111,12 @@ void Game::part1(){
     //TODO:insert ascii of transporting lol 
 
     type_text("Welcome to Pinewood Town, where your journey begins.");
-    type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. Congrats!");
+    type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. ", "Congrats!");
     cout << endl; 
     cout << endl; 
-   // type_text("Professor Maple: 'Ah, ", player.getName());
+    type_text("Professor Maple: 'Ah, ", player.getName());
     type_text(", it's great to see you again! I had three Pokemon for you to choose from: Bulbasaur, Charmander, and Squirtle.");
-   // type_text("Didn't you choose ", starterPoke->getName());
+    type_text("Didn't you choose ", starterPoke->getName());
     type_text("?");
     cout << endl; 
     type_text("(Y/N): ");
@@ -114,7 +125,7 @@ void Game::part1(){
 
     char pokechoice = 'x'; 
     while (tolower(choice) == 'n'){
-       // type_text("I see I've made a mistake. " , "I had three Pokemon for you to choose from: Bulbasaur, Charmander, and Squirtle.");
+        type_text("I see I've made a mistake. " , "I had three Pokemon for you to choose from: Bulbasaur, Charmander, and Squirtle.");
         cout << endl;
         type_text("Which pokemon would you like? (C - Charmander / B - Bulbasaur / S - Squirtle): ");
         cin >> pokechoice;
@@ -130,14 +141,14 @@ void Game::part1(){
         if(tolower(pokechoice) == 'c') {
             starterPoke = new CharmanderLine();
         } else if(tolower(pokechoice) == 'b') {
-            //starterPoke = new BulbasaurLine();
+            starterPoke = new BulbasaurLine();
         } else if(tolower(pokechoice) == 's') {
-           // starterPoke = new SquirtleLine();
+            starterPoke = new SquirtleLine();   //TODO
         }
 
         pokes[0] = starterPoke;
 
-       // type_text("Now then new trainer, your new chosen pokemon is: ", starterPoke->getName());
+        type_text("Now then new trainer, your new chosen pokemon is: ", starterPoke->getName());
         type_text(". Is this correct?");
         cout << endl; 
         type_text("(Y/N): ");
@@ -150,14 +161,6 @@ void Game::part1(){
     type_text("Great choice! Take this Pokedex and start your journey. Your first challenge is to reach Fernleaf City and challenge the Gym Leader there.");
     part1Complete = true; // when game is reloaded, we will know which parts were completed based on bools for each part
 }
-
-
-
-
-
-
-
-
 
 
 
