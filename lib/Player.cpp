@@ -85,3 +85,24 @@ int Player::getXP() const{
 std::string Player::toString() const {
     return "Name: " + Name + ", Gender: " + Gender;
 }
+
+void Player::choosePokemon(){
+    std::cout << "Trainer: choose a pokemon!"<< std::endl;
+
+}
+
+void Player::updateLevel(){
+    //i dont think this is necessary since evolve..?
+}
+
+std::string Player::checkLevel() const{
+    return "Level: " + std::to_string(Level);
+}
+
+int Player::checkHP() const{
+    return getHP();
+}
+
+int Player::checkXP() const{
+    return getXP();
+}
