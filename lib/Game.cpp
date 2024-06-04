@@ -82,7 +82,8 @@ void Game::battle() {
        cin >> choice; 
 
        if(tolower(choice) == 'y'){
-        //call catch function here 
+        Pokemon *Pidgey = new PidgeyLine();
+         player.useItem("Pokeball", Pidgey, pokes);
        }
        else{
         type_text("You've decided not to catch this pokemon.");
@@ -146,7 +147,7 @@ void Game::part1(){
             starterPoke = new SquirtleLine();   //TODO
         }
 
-        pokes[0] = starterPoke;
+        pokes.at(0) = starterPoke;
 
         type_text("Now then new trainer, your new chosen pokemon is: ", starterPoke->getName());
         type_text(". Is this correct?");
@@ -162,7 +163,73 @@ void Game::part1(){
     part1Complete = true; // when game is reloaded, we will know which parts were completed based on bools for each part
 }
 
+void Game::part2() {
+    char choice; 
+    type_text("You step out of Professor Maple's lab and start your journey towards Fernleaf City.");
+    type_text("As you walk through the tall grass, you encounter a wild Pidgey!");
+    cout << endl; 
+    
+    type_text("Would you like to battle?(Y/N) (Hint: Battling gives you a chance to catch this Pokemon!): ");
+    cin >> choice; 
 
+    if(tolower(choice == 'y')){
+        type_text("Your thrown into battle with the wild pidgey!!");
+        cout << endl; 
+        cout << endl; 
+        type_text("..........ready.....set.......GO!");
+        battle(); // Battle with wild Pidgey
+
+        type_text("After the battle, you continue your journey and reach a small village. The battle and long journey gained you 30 XP!");
+        player.gainXP(30);
+    }
+    else{
+        type_text("You avoid the Pidgey and find Fernleaf City before nightfall!");
+    }
+
+    type_text("An old man approaches you.");
+
+    type_text("Old Man: 'Hello there, young trainer! Take this Potion. It will heal your Pokemon in battle.'");
+    player.addItem("Potion");
+
+    type_text("You thank the old man and continue on your way.");
+
+    part2Complete = true; 
+}
+
+// void Game::part3() {
+//     type_text("You arrive at Fernleaf City and head to the local Pokemart to stock up on supplies.");
+//     type_text("You also learn that the Gym Leader here specializes in Grass-type Pokemon.");
+
+//     type_text("You head to the Fernleaf City Gym and challenge the Gym Leader, Flora.");
+//     type_text("Gym Leader Flora: 'Welcome, challenger! I hope you're ready to face my Grass-type Pokemon.'");
+
+//     battle(); // Battle with Gym Leader Flora
+
+//     type_text("Impressive! You've earned the Leaf Badge. Take this TM as well. It contains the move Bullet Seed.");
+
+//     part4(); // Proceed to part 4
+// }
+
+// void Game::part4() {
+//     type_text("After defeating Flora, you meet a mysterious trainer outside the gym.");
+//     type_text("Mysterious Trainer: 'Great job defeating Flora! Here, take this Rare Candy as a reward. It will make your Pokemon stronger.'");
+
+//     player.addItem(Item("Rare Candy"));
+
+//     char choice;
+//     type_text("Would you like to ask the mysterious trainer about the ancient Pokemon? (Y/N): ");
+//     cin >> choice;
+
+//     if (tolower(choice) == 'y') {
+//         type_text("Mysterious Trainer: 'I've heard rumors of an ancient Pokemon residing in the depths of Echo Cave. Maybe you should check it out.'");
+//     } else {
+//         type_text("Mysterious Trainer: 'Suit yourself. But remember, knowledge is power.'");
+//     }
+
+//     type_text("Your next destination is Echo Cave, to uncover the mysteries of the ancient Pokemon.");
+
+//     part5(); // Proceed to part 5
+// }
 
 void type_text(const string& text) //SOURCED FROM CPLUSPLUS.COM
 {

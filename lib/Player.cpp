@@ -53,10 +53,10 @@ bool Player::removeItem(const std::string& item){
     return false; 
 }
 
-// create an overload with no pokemon pass through if it needs to be appluied to player 
-void Player::useItem(const std::string& itemName, Pokemon &pokemon, vector<Pokemon*> pokes) {
+//create an overload with no pokemon pass through if it needs to be appluied to player 
+void Player::useItem(const std::string& itemName, Pokemon *pokemon, vector<Pokemon*> pokes) {
     if(itemName == "Potion"){
-        pokemon.heal(20);
+        pokemon->heal(20);
         cout << "You used a Potion. It heals your Pokemon by 20 HP." << endl;
     }
 
@@ -66,11 +66,11 @@ void Player::useItem(const std::string& itemName, Pokemon &pokemon, vector<Pokem
         int random = 1+ rand() % 10;
 
         if( random>=7){
-            pokes.push_back(&pokemon);
-            cout << "Congrats! You've caught " << pokemon.getName() << "!" << endl; 
+            pokes.push_back(pokemon);
+            cout << "Congrats! You've caught " << pokemon->getName() << "!" << endl; 
         }
         else{
-            cout << "Unfortunately, " << pokemon.getName() << "got away :(" << endl; 
+            cout << "Unfortunately, " << pokemon->getName() << "got away :(" << endl; 
         }
     }
 

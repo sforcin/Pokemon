@@ -71,3 +71,23 @@ void SquirtleLine::evolve(){
 int SquirtleLine::useAbility() {
     return Attack;
 }
+
+
+// Pidgey-Line functions
+
+void PidgeyLine::evolve(){
+    if(Attack>= 60 && Defense >=50){
+        Name = "Wartortle";
+        HP= 59;
+        Attack = 63;
+        Defense = 80;
+        SpeedAttack = 65;
+        SpeedDefense = 80;
+        std::cout<< "Evolution Complete!";
+
+    }
+}
+
+int PidgeyLine::useAbility() {
+    return Attack;
+}

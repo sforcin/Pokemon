@@ -75,13 +75,13 @@ void playGame(Game &myGame, Display &display) {
 
             switch(option) {
                 case 1:
-                    // selection = new CharmanderLine();
+                    selection = new CharmanderLine();
                     break;
                 case 2:
-                    // selection = new SquirtleLine();
+                    selection = new SquirtleLine();
                     break;
                 case 3:
-                    // selection = new BulbasaurLine();
+                    selection = new BulbasaurLine();
                     break;
             }
 
