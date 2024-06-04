@@ -77,7 +77,7 @@ int SquirtleLine::useAbility() {
 
 void PidgeyLine::evolve(){
     if(Attack>= 60 && Defense >=50){
-        Name = "Wartortle";
+        Name = "Pidgeotto";
         HP= 59;
         Attack = 63;
         Defense = 80;
