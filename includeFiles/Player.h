@@ -9,7 +9,6 @@ using namespace std;
 class Player{
 protected:
     std:: string Name;
-    char Gender;
     int XP;
     int Level;
     int HP;
@@ -27,8 +26,9 @@ public:
     void getItemDescription(string& item);
     void addItem(const string& item);
     bool removeItem(const std::string& item);
-    void useItem(const std::string& item, Pokemon& pokemon, vector<Pokemon*> pokes);
-    void listItems() const;
+    void useItem(const std::string& item, Pokemon *pokemon, vector<Pokemon*> pokes);
+    void getPokeballAmt() ;
+    void getPotionAmt() ;
 
 
 };

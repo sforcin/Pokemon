@@ -81,4 +81,15 @@ public:
     int useAbility() override;
 };
 
+
+//Pidgey class
+class PidgeyLine: public Pokemon{
+
+public:
+    PidgeyLine(): Pokemon("Pidgey", "Flying", 40, 45, 40, 35, 45){}
+    //~PidgeyLine();
+    void evolve() override;
+    int useAbility() override;
+};
+
 #endif
