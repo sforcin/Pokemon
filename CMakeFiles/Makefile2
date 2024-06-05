@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bng
 # The main recursive "all" target.
 all: CMakeFiles/Pokemon.dir/all
 all: CMakeFiles/runTests.dir/all
+all: CMakeFiles/GameTests.dir/all
 all: googletest/all
 .PHONY : all
 
@@ -75,6 +76,7 @@ preinstall: googletest/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/Pokemon.dir/clean
 clean: CMakeFiles/runTests.dir/clean
+clean: CMakeFiles/GameTests.dir/clean
 clean: googletest/clean
 .PHONY : clean
 
@@ -133,16 +135,15 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/cle
 # Target rules for target CMakeFiles/Pokemon.dir
 
 # All Build rule for target.
-CMakeFiles/Pokemon.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/Pokemon.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/Pokemon.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Pokemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=3,4,5,6,7,8,9 "Built target Pokemon"
 .PHONY : CMakeFiles/Pokemon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Pokemon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Pokemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
 .PHONY : CMakeFiles/Pokemon.dir/rule
@@ -164,12 +165,12 @@ CMakeFiles/runTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/runTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=16,17 "Built target runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=18,19,20,21,22,23,24,25 "Built target runTests"
 .PHONY : CMakeFiles/runTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
 .PHONY : CMakeFiles/runTests.dir/rule
@@ -184,13 +185,40 @@ CMakeFiles/runTests.dir/clean:
 .PHONY : CMakeFiles/runTests.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/GameTests.dir
+
+# All Build rule for target.
+CMakeFiles/GameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/GameTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=1,2 "Built target GameTests"
+.PHONY : CMakeFiles/GameTests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GameTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GameTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
+.PHONY : CMakeFiles/GameTests.dir/rule
+
+# Convenience name for target.
+GameTests: CMakeFiles/GameTests.dir/rule
+.PHONY : GameTests
+
+# clean rule for target.
+CMakeFiles/GameTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/clean
+.PHONY : CMakeFiles/GameTests.dir/clean
+
+#=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
 googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=8,9 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=10,11 "Built target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -213,11 +241,11 @@ googletest/googlemock/CMakeFiles/gmock.dir/clean:
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=10,11 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=12,13 "Built target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -243,7 +271,7 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=12,13 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=14,15 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -269,7 +297,7 @@ googletest/googletest/CMakeFiles/gtest.dir/clean:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=14,15 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=16,17 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

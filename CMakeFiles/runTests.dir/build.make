@@ -69,34 +69,130 @@ include CMakeFiles/runTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/runTests.dir/flags.make
 
-CMakeFiles/runTests.dir/lib/test_file.cpp.o: CMakeFiles/runTests.dir/flags.make
-CMakeFiles/runTests.dir/lib/test_file.cpp.o: lib/test_file.cpp
-CMakeFiles/runTests.dir/lib/test_file.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/lib/test_file.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/lib/test_file.cpp.o -MF CMakeFiles/runTests.dir/lib/test_file.cpp.o.d -o CMakeFiles/runTests.dir/lib/test_file.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/test_file.cpp
+CMakeFiles/runTests.dir/tests/GameTest.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/tests/GameTest.cpp.o: tests/GameTest.cpp
+CMakeFiles/runTests.dir/tests/GameTest.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/tests/GameTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/GameTest.cpp.o -MF CMakeFiles/runTests.dir/tests/GameTest.cpp.o.d -o CMakeFiles/runTests.dir/tests/GameTest.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/tests/GameTest.cpp
 
-CMakeFiles/runTests.dir/lib/test_file.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/lib/test_file.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/test_file.cpp > CMakeFiles/runTests.dir/lib/test_file.cpp.i
+CMakeFiles/runTests.dir/tests/GameTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/GameTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/tests/GameTest.cpp > CMakeFiles/runTests.dir/tests/GameTest.cpp.i
 
-CMakeFiles/runTests.dir/lib/test_file.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/lib/test_file.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/test_file.cpp -o CMakeFiles/runTests.dir/lib/test_file.cpp.s
+CMakeFiles/runTests.dir/tests/GameTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/GameTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/tests/GameTest.cpp -o CMakeFiles/runTests.dir/tests/GameTest.cpp.s
+
+CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o: tests/PlayerTest.cpp
+CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o -MF CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o.d -o CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/tests/PlayerTest.cpp
+
+CMakeFiles/runTests.dir/tests/PlayerTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/PlayerTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/tests/PlayerTest.cpp > CMakeFiles/runTests.dir/tests/PlayerTest.cpp.i
+
+CMakeFiles/runTests.dir/tests/PlayerTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/PlayerTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/tests/PlayerTest.cpp -o CMakeFiles/runTests.dir/tests/PlayerTest.cpp.s
+
+CMakeFiles/runTests.dir/lib/Game.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/lib/Game.cpp.o: lib/Game.cpp
+CMakeFiles/runTests.dir/lib/Game.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/lib/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/lib/Game.cpp.o -MF CMakeFiles/runTests.dir/lib/Game.cpp.o.d -o CMakeFiles/runTests.dir/lib/Game.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Game.cpp
+
+CMakeFiles/runTests.dir/lib/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/lib/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Game.cpp > CMakeFiles/runTests.dir/lib/Game.cpp.i
+
+CMakeFiles/runTests.dir/lib/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/lib/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Game.cpp -o CMakeFiles/runTests.dir/lib/Game.cpp.s
+
+CMakeFiles/runTests.dir/lib/Display.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/lib/Display.cpp.o: lib/Display.cpp
+CMakeFiles/runTests.dir/lib/Display.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runTests.dir/lib/Display.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/lib/Display.cpp.o -MF CMakeFiles/runTests.dir/lib/Display.cpp.o.d -o CMakeFiles/runTests.dir/lib/Display.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Display.cpp
+
+CMakeFiles/runTests.dir/lib/Display.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/lib/Display.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Display.cpp > CMakeFiles/runTests.dir/lib/Display.cpp.i
+
+CMakeFiles/runTests.dir/lib/Display.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/lib/Display.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Display.cpp -o CMakeFiles/runTests.dir/lib/Display.cpp.s
+
+CMakeFiles/runTests.dir/lib/Player.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/lib/Player.cpp.o: lib/Player.cpp
+CMakeFiles/runTests.dir/lib/Player.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runTests.dir/lib/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/lib/Player.cpp.o -MF CMakeFiles/runTests.dir/lib/Player.cpp.o.d -o CMakeFiles/runTests.dir/lib/Player.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Player.cpp
+
+CMakeFiles/runTests.dir/lib/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/lib/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Player.cpp > CMakeFiles/runTests.dir/lib/Player.cpp.i
+
+CMakeFiles/runTests.dir/lib/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/lib/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Player.cpp -o CMakeFiles/runTests.dir/lib/Player.cpp.s
+
+CMakeFiles/runTests.dir/lib/Item.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/lib/Item.cpp.o: lib/Item.cpp
+CMakeFiles/runTests.dir/lib/Item.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runTests.dir/lib/Item.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/lib/Item.cpp.o -MF CMakeFiles/runTests.dir/lib/Item.cpp.o.d -o CMakeFiles/runTests.dir/lib/Item.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Item.cpp
+
+CMakeFiles/runTests.dir/lib/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/lib/Item.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Item.cpp > CMakeFiles/runTests.dir/lib/Item.cpp.i
+
+CMakeFiles/runTests.dir/lib/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/lib/Item.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Item.cpp -o CMakeFiles/runTests.dir/lib/Item.cpp.s
+
+CMakeFiles/runTests.dir/lib/Pokemon.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/lib/Pokemon.cpp.o: lib/Pokemon.cpp
+CMakeFiles/runTests.dir/lib/Pokemon.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runTests.dir/lib/Pokemon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/lib/Pokemon.cpp.o -MF CMakeFiles/runTests.dir/lib/Pokemon.cpp.o.d -o CMakeFiles/runTests.dir/lib/Pokemon.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Pokemon.cpp
+
+CMakeFiles/runTests.dir/lib/Pokemon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/lib/Pokemon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Pokemon.cpp > CMakeFiles/runTests.dir/lib/Pokemon.cpp.i
+
+CMakeFiles/runTests.dir/lib/Pokemon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/lib/Pokemon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Pokemon.cpp -o CMakeFiles/runTests.dir/lib/Pokemon.cpp.s
 
 # Object files for target runTests
 runTests_OBJECTS = \
-"CMakeFiles/runTests.dir/lib/test_file.cpp.o"
+"CMakeFiles/runTests.dir/tests/GameTest.cpp.o" \
+"CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o" \
+"CMakeFiles/runTests.dir/lib/Game.cpp.o" \
+"CMakeFiles/runTests.dir/lib/Display.cpp.o" \
+"CMakeFiles/runTests.dir/lib/Player.cpp.o" \
+"CMakeFiles/runTests.dir/lib/Item.cpp.o" \
+"CMakeFiles/runTests.dir/lib/Pokemon.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
-runTests: CMakeFiles/runTests.dir/lib/test_file.cpp.o
+runTests: CMakeFiles/runTests.dir/tests/GameTest.cpp.o
+runTests: CMakeFiles/runTests.dir/tests/PlayerTest.cpp.o
+runTests: CMakeFiles/runTests.dir/lib/Game.cpp.o
+runTests: CMakeFiles/runTests.dir/lib/Display.cpp.o
+runTests: CMakeFiles/runTests.dir/lib/Player.cpp.o
+runTests: CMakeFiles/runTests.dir/lib/Item.cpp.o
+runTests: CMakeFiles/runTests.dir/lib/Pokemon.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: lib/libgtest.a
 runTests: lib/libgtest_main.a
 runTests: lib/libgtest.a
 runTests: CMakeFiles/runTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable runTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -172,9 +172,6 @@ Pokemon: CMakeFiles/Pokemon.dir/lib/Player.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/lib/Item.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/build.make
-Pokemon: lib/libgtest.a
-Pokemon: lib/libgtest_main.a
-Pokemon: lib/libgtest.a
 Pokemon: CMakeFiles/Pokemon.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Pokemon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pokemon.dir/link.txt --verbose=$(VERBOSE)

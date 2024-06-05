@@ -175,17 +175,17 @@ Pokemon/fast:
 .PHONY : Pokemon/fast
 
 #=============================================================================
-# Target rules for targets named runTests
+# Target rules for targets named GameTests
 
 # Build rule for target.
-runTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runTests
-.PHONY : runTests
+GameTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GameTests
+.PHONY : GameTests
 
 # fast build rule for target.
-runTests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
-.PHONY : runTests/fast
+GameTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/build
+.PHONY : GameTests/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -359,30 +359,6 @@ lib/Pokemon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.s
 .PHONY : lib/Pokemon.cpp.s
 
-lib/test_file.o: lib/test_file.cpp.o
-.PHONY : lib/test_file.o
-
-# target to build an object file
-lib/test_file.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/lib/test_file.cpp.o
-.PHONY : lib/test_file.cpp.o
-
-lib/test_file.i: lib/test_file.cpp.i
-.PHONY : lib/test_file.i
-
-# target to preprocess a source file
-lib/test_file.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/lib/test_file.cpp.i
-.PHONY : lib/test_file.cpp.i
-
-lib/test_file.s: lib/test_file.cpp.s
-.PHONY : lib/test_file.s
-
-# target to generate assembly for a file
-lib/test_file.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/lib/test_file.cpp.s
-.PHONY : lib/test_file.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -407,6 +383,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests/GamerTest.o: tests/GamerTest.cpp.o
+.PHONY : tests/GamerTest.o
+
+# target to build an object file
+tests/GamerTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/GamerTest.cpp.o
+.PHONY : tests/GamerTest.cpp.o
+
+tests/GamerTest.i: tests/GamerTest.cpp.i
+.PHONY : tests/GamerTest.i
+
+# target to preprocess a source file
+tests/GamerTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/GamerTest.cpp.i
+.PHONY : tests/GamerTest.cpp.i
+
+tests/GamerTest.s: tests/GamerTest.cpp.s
+.PHONY : tests/GamerTest.s
+
+# target to generate assembly for a file
+tests/GamerTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/GamerTest.cpp.s
+.PHONY : tests/GamerTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -419,12 +419,12 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... GameTests"
 	@echo "... Pokemon"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... runTests"
 	@echo "... lib/Display.o"
 	@echo "... lib/Display.i"
 	@echo "... lib/Display.s"
@@ -440,12 +440,12 @@ help:
 	@echo "... lib/Pokemon.o"
 	@echo "... lib/Pokemon.i"
 	@echo "... lib/Pokemon.s"
-	@echo "... lib/test_file.o"
-	@echo "... lib/test_file.i"
-	@echo "... lib/test_file.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests/GamerTest.o"
+	@echo "... tests/GamerTest.i"
+	@echo "... tests/GamerTest.s"
 .PHONY : help
 
 

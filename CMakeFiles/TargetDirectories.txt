@@ -1,5 +1,6 @@
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles/Pokemon.dir
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles/runTests.dir
+/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles/GameTests.dir
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles/edit_cache.dir
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles/rebuild_cache.dir
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles/list_install_components.dir
