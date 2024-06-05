@@ -37,7 +37,7 @@ int CharmanderLine::useAbility() {
 // Bulb-Line functions
 
 void BulbasaurLine::evolve(){
-    if(Attack>= 60 && Defense >=50){
+ 
         Name = "Ivysaur";
         HP= 60;
         Attack = 62;
@@ -46,7 +46,7 @@ void BulbasaurLine::evolve(){
         SpeedDefense = 80;
         std::cout<< "Evolution Complete!";
 
-    }
+    
 }
 
 int BulbasaurLine::useAbility() {
@@ -56,16 +56,16 @@ int BulbasaurLine::useAbility() {
 // Squirtle-Line functions
 
 void SquirtleLine::evolve(){
-    if(Attack>= 60 && Defense >=50){
+
         Name = "Wartortle";
         HP= 59;
         Attack = 63;
         Defense = 80;
         SpeedAttack = 65;
         SpeedDefense = 80;
-        std::cout<< "Evolution Complete!";
+        std::cout<< "Evolution Complete! Your poekmon has evolved to Ivysaur.";
 
-    }
+    
 }
 
 int SquirtleLine::useAbility() {
@@ -76,7 +76,7 @@ int SquirtleLine::useAbility() {
 // Pidgey-Line functions
 
 void PidgeyLine::evolve(){
-    if(Attack>= 60 && Defense >=50){
+ 
         Name = "Pidgeotto";
         HP= 59;
         Attack = 63;
@@ -85,7 +85,7 @@ void PidgeyLine::evolve(){
         SpeedDefense = 80;
         std::cout<< "Evolution Complete!";
 
-    }
+    
 }
 
 int PidgeyLine::useAbility() {

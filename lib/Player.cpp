@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Player::Player(const std::string& name, char gender) : Name(name), Gender(gender), XP(0), Level(1), HP(3 * Level + 100){
+Player::Player(const std::string& name, char gender) : Name(name), XP(0), Level(1), HP(3 * Level + 100){
 }
 
 void Player::gainXP(int amount){
@@ -60,6 +60,11 @@ void Player::useItem(const std::string& itemName, Pokemon *pokemon, vector<Pokem
         cout << "You used a Potion. It heals your Pokemon by 20 HP." << endl;
     }
 
+    if(itemName == "Rare Candy"){
+        pokemon->evolve();
+        cout << "You used a Rare Candy. It lead to your Pokemon evolving." << endl;
+    }
+
     else if (itemName == "PokeBall"){
         cout << "You used a Poké Ball. Attempting to catch the wild Pokemon." << endl;
         srand(time(0));
@@ -83,7 +88,7 @@ int Player::getXP() const{
 }
 
 std::string Player::toString() const {
-    return "Name: " + Name + ", Gender: " + Gender;
+    return "Name: " + Name;
 }
 //KEEP THESE COMMENTS !!@@@@@E@&!TGEDP&YT ({!@ _______________________________________________________________________________-
 
@@ -107,3 +112,23 @@ std::string Player::toString() const {
 // int Player::checkXP() const{
 //     return getXP();
 // }
+
+void Player::getPokeballAmt() {
+    int counter =0; 
+    for(size_t i =0; i< Inventory.size(); ++i){
+        if(Inventory.at(i)=="Pokeball"){
+            counter++;
+        }
+    }
+    cout << "You have " << counter << " Pokeballs." << endl;  
+}
+
+void Player::getPotionAmt() {
+ int counter =0; 
+    for(size_t i =0; i< Inventory.size(); ++i){
+        if(Inventory.at(i)=="Potion"){
+            counter++;
+        }
+    }
+    cout << "You have " << counter << " Potions." << endl;  
+}
