@@ -9,6 +9,8 @@
 #include  "../includeFiles/Display.h"
 #include  "../includeFiles/Player.h"
 
+using namespace std; 
+
 Game::Game() : player("", ' ') {
     isNewGame = true;
 }
@@ -32,15 +34,15 @@ void Game::loadGame(string loadFileName) {
     cout << "Starting a new game." << endl << endl;
 }
 
-void Game::turn() {
-    int chance = rand() % 100; // random number between 0 and 100
-    if (chance < 75) { // 75% of nothing happening
-        cout << "Nothing Happened!!!" << endl;
-    } else { // 25% chance of minibattle
-        cout << "Mini Boss Encountered!!!" << endl;
-        battle();
-    }
-}
+// void Game::turn() {
+//     int chance = rand() % 100; // random number between 0 and 100
+//     if (chance < 75) { // 75% of nothing happening
+//         cout << "Nothing Happened!!!" << endl;
+//     } else { // 25% chance of minibattle
+//         cout << "Mini Boss Encountered!!!" << endl;
+//         Pidgeybattle();
+//     }
+// }
 
 void Game::battle() {
     int enemyHealth = rand() % 75;
@@ -76,10 +78,41 @@ void Game::battle() {
 
     cout << endl;
     if (enemyHealth <= 0) { // enemy is dead
-        cout << "You Won This Battle!!! :)" << endl;
+       type_text("You won this battle!! :)");
+
     } else { // your pokemon is dead
         cout << "Enemy Won This Battle!!! :(" << endl;
     }
+}
+
+void Game::catchPidgey(){
+    char choice; 
+    player.getPokeballAmt();
+       type_text("Do you want to try to catch this Pidgey? (Y/N)");
+       cin >> choice; 
+
+       if(tolower(choice) == 'y'){
+        Pokemon *Pidgey = new PidgeyLine();
+         player.useItem("Pokeball", Pidgey, pokes);
+       }
+       else{
+        type_text("You've decided not to catch this pokemon.");
+       }
+}
+
+void Game::catchBulbasaur(){
+    char choice; 
+    player.getPokeballAmt();
+       type_text("Do you want to try to catch this Gym Owner's Bulbasaur? (Y/N)");
+       cin >> choice; 
+
+       if(tolower(choice) == 'y'){
+        Pokemon *Bulbasaur = new BulbasaurLine();
+         player.useItem("Pokeball", Bulbasaur, pokes);
+       }
+       else{
+        type_text("You've decided not to catch this pokemon.");
+       }
 }
 
 void Game::part1(){ 
@@ -100,7 +133,7 @@ void Game::part1(){
     //TODO:insert ascii of transporting lol 
 
     type_text("Welcome to Pinewood Town, where your journey begins.");
-    type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. Congrats!");
+    type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. ", "Congrats!");
     cout << endl; 
     cout << endl; 
     type_text("Professor Maple: 'Ah, ", player.getName());
@@ -132,10 +165,10 @@ void Game::part1(){
         } else if(tolower(pokechoice) == 'b') {
             starterPoke = new BulbasaurLine();
         } else if(tolower(pokechoice) == 's') {
-            starterPoke = new SquirtleLine();
+            starterPoke = new SquirtleLine();   //TODO
         }
 
-        pokes[0] = starterPoke;
+        pokes.at(0) = starterPoke;
 
         type_text("Now then new trainer, your new chosen pokemon is: ", starterPoke->getName());
         type_text(". Is this correct?");
@@ -147,19 +180,154 @@ void Game::part1(){
 
 
 
-    type_text("Great choice! Take this Pokedex and start your journey. Your first challenge is to reach Fernleaf City and challenge the Gym Leader there.");
+    type_text("Great choice! Take this Pokedex, and 3 pokeballs to start your journey. Your first challenge is to reach Fernleaf City and challenge the Gym Leader there.");
+    player.addItem("Pokeball");
+    player.addItem("Pokeball");
+    player.addItem("Pokeball");
     part1Complete = true; // when game is reloaded, we will know which parts were completed based on bools for each part
 }
 
+void Game::part2() {
+    char choice; 
+    type_text("You step out of Professor Maple's lab and start your journey towards Fernleaf City.");
+    type_text("As you walk through the tall grass, you encounter a wild Pidgey!");
+    cout << endl; 
+    
+    type_text("Would you like to battle?(Y/N) (Hint: Battling gives you a chance to catch this Pokemon!): ");
+    cin >> choice; 
 
+    if(tolower(choice == 'y')){
+        type_text("Your thrown into battle with the wild pidgey!!");
+        cout << endl; 
+        cout << endl; 
+        type_text("..........ready.....set.......GO!");
+        battle(); 
+        catchPidgey(); 
 
+        type_text("After the battle, you continue your journey and reach a small village. The battle and long journey gained you 30 XP!");
+        player.gainXP(30);
+    }
+    else{
+        type_text("You avoid the Pidgey and find Fernleaf City before nightfall!");
+    }
 
+    type_text("An old man approaches you.");
 
+    type_text("Old Man: 'Hello there, young trainer! Take this Potion. It will heal your Pokemon in battle.'");
+    player.addItem("Potion");
 
+    type_text("You thank the old man and continue on your way.");
 
+    part2Complete = true; 
+}
 
+void Game::part3() {
+    type_text("You arrive at Fernleaf City and head to the local Pokemart to stock up on supplies.");
+    type_text("You also learn that the Gym Leader here specializes in Grass-type Pokemon.");
 
+    type_text("You head to the Fernleaf City Gym and challenge the Gym Leader, Flora.");
+    type_text("Gym Leader Flora: 'Welcome, challenger! I hope you're ready to face my Grass-type Pokemon.'");
+    cout << endl; 
+    cout << endl; 
+    type_text("..........ready.....set.......GO!");
+    battle(); // Battle with Gym Leader Flora
+    type_text("Impressive! You've earned the Leaf Badge for visiting this gym. Take this Potion as well. It can heal your pokemon.");
+    if(pokes.at(0)->getName() == "Bulbasaur"){
+        type_text("This leader battled you with a Bulbasaur Pokemon, which you already have! Because of your battle, your pokemon earned a lot of XP!");
+        pokes.at(0)->evolve();
+    }
+    else{
+        catchBulbasaur();
+    }
+    player.addItem("Potion");
+    part3Complete = true; 
+}
 
+void Game::part4() {
+    type_text("After defeating Flora, you meet a mysterious trainer outside the gym.");
+    type_text("Mysterious Trainer: 'Great job defeating Flora! Here, take this Rare Candy as a reward. It will make your Pokemon much, much stronger.'");
+
+    player.addItem("Rare Candy");
+
+    char choice;
+    type_text("Would you like to ask the mysterious trainer about the ancient Pokemon? (Y/N): ");
+    cin >> choice;
+
+    if (tolower(choice) == 'y') {
+        type_text("Mysterious Trainer: 'I've heard rumors of an ancient Pokemon residing in the depths of Echo Cave. Maybe you should check it out.'");
+    } else {
+        type_text("Mysterious Trainer: 'Suit yourself. But remember, knowledge is power.'");
+    }
+
+    type_text("Your next destination is Echo Cave, to uncover the mysteries of the ancient Pokemon.");
+
+    part4Complete = true;
+}
+
+void Game::part5() {
+    type_text("You journey towards Echo Cave, ready for whatever challenges lie ahead.");
+    type_text("As you enter the cave, you are confronted by Team Rocket!");
+
+    cout << endl; 
+    cout << endl; 
+    type_text("..........ready.....set.......GO!");
+
+    battle(); // Battle with Team Rocket
+
+    type_text("After defeating Team Rocket, you delve deeper into the cave and find an ancient inscription.");
+
+    type_text("The inscription tells the legend of a powerful Pokemon that can only be awakened by the pure of heart.");
+
+    type_text("Determined to uncover the truth, you continue deeper into the cave.");
+
+    part5Complete = true;
+}
+
+void Game::part6() {
+    type_text("You reach the heart of Echo Cave and find the resting place of Mewtwo.");
+    type_text("Mewtwo awakens and challenges you to a battle!");
+
+    char choice; 
+    type_text("Before this battle starts, would you like to use the Rare candy (Y/N)? (Hint: you should): ");
+    cin >> choice; 
+
+    if(tolower(choice == 'y')){
+        
+        string name = "x"; 
+        while(true){ 
+            type_text("Which Pokemon Would you like to use it on?(C - Charmander, B - Bulbasaur, S - Squirtle, P - Pidgey): ");
+            cin >> choice; 
+
+            if(tolower(choice == 'p')) {name == "Pidgey"; break;}
+            else if(tolower(choice == 's')){name == "Squirtle"; break;}
+            else if(tolower(choice == 'b')){name == "Bulbasaur"; break;}
+            else if(tolower(choice == 'c')){name == "Charmander"; break;}
+            else{
+                type_text("Looks like you haven't chosen the options provided. Please make sure to enter a letter.");
+                cout << endl; 
+            }
+        }
+
+        int pokemonToEvolve = 0; 
+        for(unsigned int i = 0; i< pokes.size(); ++i){
+            if(pokes.at(i)->getName() == name){
+                pokemonToEvolve = i; 
+                break; 
+            }
+        }
+        player.useItem("Rare Candy", pokes.at(pokemonToEvolve) , pokes);
+    }
+    type_text("OK. Now starting battle....");
+    cout << endl; 
+    cout << endl; 
+    type_text("..........ready.....set.......GO!");
+    battle(); // Battle with Mewtwo
+
+    type_text("After a fierce battle, you've finally conquered Echo Cave.");
+    type_text("With your new Pokemon by your side, you return to Fernleaf City, ready to go home.");
+
+     part6Complete = true;
+}
 
 void type_text(const string& text) //SOURCED FROM CPLUSPLUS.COM
 {
