@@ -15,23 +15,108 @@ Game::Game() : player("", ' ') {
     isNewGame = true;
 }
 
+// ---------EX of whats in file------------
+// Name
+// XP
+// Level
+// HP 
+// part1Complete
+// Player Inventory
+// Pokemon Vector
+// ----------------------------------------
 void Game::saveGame(string filename) {
     ofstream outFile(filename);
     if(outFile){
-        outFile<< "Player name: " <<player.getName() << endl;
-        outFile << "Player XP: " << player.getXP() << endl;
-        outFile << "Player HP: " << player.getHP() << endl;
-        //we can add more things here.
+        //save player information
+        outFile << player.getName() << endl;
+        outFile << player.getXP() << endl;
+        outFile << player.checkLevel() << endl;
+        outFile << player.getHP() << endl;
+
+         // Save part1Complete flag
+        if(part1Complete){
+            outFile << "t" << endl;
+        }
+        else{
+            outFile << "f" << endl;
+        }
+
+        // Save player inventory
+        outFile << player.inventory.size() << endl;
+        for (const string& item : player.inventory) {
+            outFile << item << endl;
+        }
+
+        // Save Pokémon vector
+        outFile << pokes.size() << endl;
+        for (const Pokemon* poke : pokes) {
+            // Save Pokémon data (you'll need to adjust this based on your actual Pokémon class)
+            outFile << poke->getName() << " " << poke->getType() << " " << poke->getHP() << " " << poke->attack() << " " << poke->defense() << " " << poke->getType() << " " << poke->speedAttack() << " " << poke->speedDefense() << endl;
+        }
+
+        //Game saved
+        cout << "Game saved successfully." << endl;
         outFile.close();
     }
     else{
-        __throw_out_of_range("Error opening file for saving");
+        cout << "Error opening file for saving." << endl;
     }
 }
 
-void Game::loadGame(string loadFileName) {
-    cout << "Loading a save file does nothing at the moment." << endl;
-    cout << "Starting a new game." << endl << endl;
+void Game::loadGame(const string& loadFileName) {
+    ifstream inFile(loadFileName);
+    if (inFile.is_open()) {
+        // Load player information
+        string playerName;
+        int playerXP, playerLevel, playerHP;
+        string part1TrueOrFalse;
+        
+        getline(inFile, playerName);
+        inFile >> playerXP >> playerLevel >> playerHP;
+        inFile >> part1TrueOrFalse;
+        
+        player.setName(playerName);
+        player.setXP(playerXP);
+        player.setLevel(playerLevel);
+        player.setHP(playerHP);
+        
+        part1Complete = (part1TrueOrFalse == "t");
+
+        // Load player inventory
+        int inventorySize;
+        inFile >> inventorySize;
+        player.inventory.clear(); // Clear existing inventory
+        inFile.ignore(); // Ignore newline character before reading strings
+        for (int i = 0; i < inventorySize; ++i) {
+            string item;
+            getline(inFile, item);
+            player.inventory.push_back(item);
+        }
+
+        // Load Pokémon vector
+        int numPokemons;
+        inFile >> numPokemons;
+        pokes.clear(); // Clear existing Pokémon
+        inFile.ignore(); // Ignore newline character before reading strings
+        for (int i = 0; i < numPokemons; ++i) {
+            string pokeName, pokeType;
+            int pokeHP, pokeAttack, pokeDefense, pokeSpeedAttack, pokeSpeedDefense;
+            
+            getline(inFile, pokeName, ' ');
+            getline(inFile, pokeType, ' ');
+            inFile >> pokeHP >> pokeAttack >> pokeDefense >> pokeSpeedAttack >> pokeSpeedDefense;
+            
+            // Create a new Pokémon instance and add it to the vector
+            Pokemon* newPoke = new Pokemon(pokeName, pokeType, pokeHP, pokeAttack, pokeDefense, pokeSpeedAttack, pokeSpeedDefense);
+            pokes.push_back(newPoke);
+            inFile.ignore(); // Ignore newline character after reading each Pokémon
+        }
+
+        cout << "Game loaded successfully." << endl;
+    } else {
+        cout << "Could not open your saved game. Try again." << endl;
+    }
+    inFile.close();
 }
 
 // void Game::turn() {
