@@ -46,3 +46,4 @@ class Game {
  void type_text(const string& text1, const string &text2);
 
  #endif
+

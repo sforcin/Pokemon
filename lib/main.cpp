@@ -1,6 +1,3 @@
-//MAINCPP
-
-
 #include <iostream>
 #include <string>
 
@@ -78,13 +75,13 @@ void playGame(Game &myGame, Display &display) {
 
             switch(option) {
                 case 1:
-                    // selection = new CharmanderLine();
+                    selection = new CharmanderLine();
                     break;
                 case 2:
-                    // selection = new SquirtleLine();
+                    selection = new SquirtleLine();
                     break;
                 case 3:
-                    // selection = new BulbasaurLine();
+                    selection = new BulbasaurLine();
                     break;
             }
 
@@ -131,7 +128,7 @@ void playGame(Game &myGame, Display &display) {
         }
 
     //
-    // PAUSE MENU IMPLEMENTATION
+    // PAUSE MENU IMPLEMENTATION - make this a seperate function !!!! to call later in main. 
     //
 
         if (input == "pause") { // pause/settings menu
@@ -170,8 +167,27 @@ void playGame(Game &myGame, Display &display) {
     // THE ACTUAL GAME LOGIC
     //
 
+///FIX  THISSSSSSS - for loop 
         else if (input == "next") { // do next turn
-            myGame.part1();
+            if(myGame.part1Complete == false){
+                myGame.part1();
+                //add do you want to exit function after each part 
+            }
+            if(myGame.part2Complete == false){
+                myGame.part2();
+            }
+             if(myGame.part3Complete == false){
+                myGame.part3();
+            }
+            if(myGame.part4Complete == false){
+                myGame.part4();
+            }
+            if(myGame.part5Complete == false){
+                myGame.part5();
+            }
+            if(myGame.part6Complete == false){
+                myGame.part6();
+            }
         }
 
     }
