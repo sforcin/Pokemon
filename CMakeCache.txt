@@ -287,15 +287,6 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
-PokemonRPG_BINARY_DIR:STATIC=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1
-
-//Value Computed by CMake
-PokemonRPG_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-PokemonRPG_SOURCE_DIR:STATIC=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1
-
-//Value Computed by CMake
 Pokemon_BINARY_DIR:STATIC=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1
 
 //Value Computed by CMake

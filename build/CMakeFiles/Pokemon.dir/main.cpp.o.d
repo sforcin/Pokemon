@@ -1,8 +1,6 @@
-CMakeFiles/PokemonRPG.dir/lib/Pokemon.cpp.o: \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Pokemon.cpp \
- /usr/include/stdc-predef.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Pokemon.h \
- /usr/include/c++/8/iostream \
+CMakeFiles/Pokemon.dir/main.cpp.o: \
+ /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/main.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/os_defines.h \
@@ -112,4 +110,13 @@ CMakeFiles/PokemonRPG.dir/lib/Pokemon.cpp.o: \
  /usr/include/c++/8/bits/locale_facets.tcc \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
- /usr/include/c++/8/bits/istream.tcc
+ /usr/include/c++/8/bits/istream.tcc \
+ /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/includeFiles/../includeFiles/Display.h \
+ /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_construct.h \
+ /usr/include/c++/8/bits/stl_uninitialized.h \
+ /usr/include/c++/8/bits/stl_vector.h \
+ /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
+ /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/includeFiles/../includeFiles/Game.h \
+ /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/includeFiles/../includeFiles/Player.h \
+ /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/includeFiles/../includeFiles/Pokemon.h \
+ /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/includeFiles/../includeFiles/Pokemon.h

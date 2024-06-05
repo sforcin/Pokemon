@@ -73,7 +73,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/PokemonRPG.dir/DependInfo.cmake"
+  "CMakeFiles/Pokemon.dir/DependInfo.cmake"
   "CMakeFiles/runTests.dir/DependInfo.cmake"
   "googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bng
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PokemonRPG.dir/all
+all: CMakeFiles/Pokemon.dir/all
 all: CMakeFiles/runTests.dir/all
 all: googletest/all
 .PHONY : all
@@ -73,7 +73,7 @@ preinstall: googletest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PokemonRPG.dir/clean
+clean: CMakeFiles/Pokemon.dir/clean
 clean: CMakeFiles/runTests.dir/clean
 clean: googletest/clean
 .PHONY : clean
@@ -130,31 +130,31 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/cle
 .PHONY : googletest/googletest/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PokemonRPG.dir
+# Target rules for target CMakeFiles/Pokemon.dir
 
 # All Build rule for target.
-CMakeFiles/PokemonRPG.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/PokemonRPG.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonRPG.dir/build.make CMakeFiles/PokemonRPG.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonRPG.dir/build.make CMakeFiles/PokemonRPG.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target PokemonRPG"
-.PHONY : CMakeFiles/PokemonRPG.dir/all
+CMakeFiles/Pokemon.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/Pokemon.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Pokemon"
+.PHONY : CMakeFiles/Pokemon.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PokemonRPG.dir/rule: cmake_check_build_system
+CMakeFiles/Pokemon.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PokemonRPG.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Pokemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles 0
-.PHONY : CMakeFiles/PokemonRPG.dir/rule
+.PHONY : CMakeFiles/Pokemon.dir/rule
 
 # Convenience name for target.
-PokemonRPG: CMakeFiles/PokemonRPG.dir/rule
-.PHONY : PokemonRPG
+Pokemon: CMakeFiles/Pokemon.dir/rule
+.PHONY : Pokemon
 
 # clean rule for target.
-CMakeFiles/PokemonRPG.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokemonRPG.dir/build.make CMakeFiles/PokemonRPG.dir/clean
-.PHONY : CMakeFiles/PokemonRPG.dir/clean
+CMakeFiles/Pokemon.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/clean
+.PHONY : CMakeFiles/Pokemon.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/runTests.dir

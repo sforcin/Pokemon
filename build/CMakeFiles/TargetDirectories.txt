@@ -1,4 +1,4 @@
-/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles/PokemonRPG.dir
+/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles/Pokemon.dir
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles/runTests.dir
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles/edit_cache.dir
 /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/build/CMakeFiles/rebuild_cache.dir
