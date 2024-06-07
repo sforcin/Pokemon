@@ -1,33 +1,26 @@
 #include "../includeFiles/Player.h"
-// #include "../includeFiles/Pokemon.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 
 using namespace std;
 
-Player::Player(const std::string& name, char gender) : Name(name), XP(0), Level(1), HP(3 * Level + 100){
+Player::Player(const std::string& name, char gender) : Name(name), XP(0){
 }
 
 void Player::gainXP(int amount){
     XP+= amount;
-    checkLevel();
 }
 
-void Player::checkLevel(){
-    while(XP>=100 * Level){
-        Level++;
-        HP= 3* Level + 100;
-        std::cout<< "Leveled up to "<< Level<< "! HP is now" << HP<< "."<<std::endl;
-    }
+const vector<string>& Player::getInventory() const {
+    return Inventory;
 }
 
-int Player::getHP() const{
-    return HP;
-
+void Player::setInventory(const vector<string>& inventory) {
+    Inventory = inventory;
 }
 
-//ITEMS/INVENTORY FUNCTIONS ---------------------------------------------------------------------------------------------------------------------------------
+//ITEMS&NVENTORY FUNCTIONS ---------------------------------------------------------------------------------------------------------------------------------
 void getItemDescription(string& item) {
     if(item == "Potion"){
        cout << "The Potion Item heals a Pokemon by 20 HP <3" << endl;
@@ -83,35 +76,10 @@ void Player::useItem(const std::string& itemName, Pokemon *pokemon, vector<Pokem
     return; 
 }
 
-int Player::getXP() const{
-    return XP;
-}
 
 std::string Player::toString() const {
     return "Name: " + Name;
 }
-//KEEP THESE COMMENTS !!@@@@@E@&!TGEDP&YT ({!@ _______________________________________________________________________________-
-
-// void Player::choosePokemon(){
-//     std::cout << "Trainer: choose a pokemon!"<< std::endl;
-
-// }
-
-// void Player::updateLevel(){
-//     //i dont think this is necessary since evolve..?
-// }
-
-// std::string Player::checkLevel() const{
-//     return "Level: " + std::to_string(Level);
-// }
-
-// int Player::checkHP() const{
-//     return getHP();
-// }
-
-// int Player::checkXP() const{
-//     return getXP();
-// }
 
 void Player::getPokeballAmt() {
     int counter =0; 

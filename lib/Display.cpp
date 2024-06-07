@@ -59,5 +59,6 @@ vector<string> DisplayPauseMenu::getOptions() const {
 }
 
 //
-// DISPLAY CLASS
+// DISPLAY CLASS END
 //
+
