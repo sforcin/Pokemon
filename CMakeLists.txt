@@ -25,7 +25,6 @@ add_executable(runTests
     lib/Game.cpp
     lib/Display.cpp
     lib/Player.cpp
-    lib/Item.cpp
     lib/Pokemon.cpp
 )
 

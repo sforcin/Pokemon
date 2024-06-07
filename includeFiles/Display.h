@@ -41,7 +41,7 @@ class DisplayCharacterSelection {
 // US OR DELETE THIS 
 class DisplayPauseMenu {
     private:
-        const vector<string> options{"Edit / Add Characters", "Delete Game", "Save & Exit", "Resume Game"};
+        const vector<string> options{"Save & Exit", "Resume Game"};
         const string border = "---------------------------------"; // the border to be printed before and after the menu
         const string indent = "        "; // the indent to print before each line, excluding the border lines        
         friend class Display;
