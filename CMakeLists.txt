@@ -7,6 +7,7 @@ include_directories(includeFiles)
 
 add_subdirectory(googletest)
 
+
 add_executable(Pokemon
     main.cpp
     lib/Game.cpp
@@ -17,6 +18,7 @@ add_executable(Pokemon
 )
 
 target_link_libraries(Pokemon pthread)
+
 
 add_executable(runTests
     tests/GameTest.cpp
@@ -32,10 +34,3 @@ target_link_libraries(runTests gtest gtest_main pthread)
 target_include_directories(runTests PRIVATE googletest/googletest/include)
 
 
-#gameTest
-
-add_executable(GameTests tests/GameTest.cpp)
-
-target_link_libraries(GameTests gtest gtest_main)
-
-target_include_directories(GameTests PRIVATE googletest/googletest/include)

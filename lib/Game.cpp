@@ -9,40 +9,191 @@
 #include  "../includeFiles/Display.h"
 #include  "../includeFiles/Player.h"
 
-using namespace std; 
+using namespace std;  
 
 Game::Game() : player("", ' ') {
     isNewGame = true;
 }
 
+// ---------EX of whats in file------------
+// Name
+// XP
+// Level
+// HP 
+// part1Complete
+// Player Inventory
+// Pokemon Vector
+// ----------------------------------------
 void Game::saveGame(string filename) {
     ofstream outFile(filename);
     if(outFile){
-        outFile<< "Player name: " <<player.getName() << endl;
-        outFile << "Player XP: " << player.getXP() << endl;
-        outFile << "Player HP: " << player.getHP() << endl;
-        //we can add more things here.
+        //save player information
+        outFile << filename << endl;
+        outFile << player.getName() << endl;
+        outFile << player.getXP() << endl;
+    
+
+        if(isNewGame == true){
+            outFile << "t" << endl;
+        }
+        else if (isNewGame == false){
+            outFile << "f" << endl;
+        }
+
+        if(part1Complete == true){
+            outFile << "t" << endl;
+        }
+        else if (part1Complete == false){
+            outFile << "f" << endl;
+        }
+
+        if(part2Complete == true){
+            outFile << "t" << endl;
+        }
+        else if (part2Complete == false){
+            outFile << "f" << endl;
+        }
+
+        if(part3Complete == true){
+            outFile << "t" << endl;
+        }
+        else if (part4Complete == false){
+            outFile << "f" << endl;
+        }
+        if(part4Complete == true){
+            outFile << "t" << endl;
+        }
+        else if (part4Complete == false){
+            outFile << "f" << endl;
+        }
+        if(part5Complete == true){
+            outFile << "t" << endl;
+        }
+        else if (part5Complete == false){
+            outFile << "f" << endl;
+        }
+        if(part6Complete == true){
+            outFile << "t" << endl;
+        }
+        else if(part6Complete == false){
+            outFile << "f" << endl;
+        }
+        // Save player inventory
+        const vector<string>& inventory = player.getInventory();
+        outFile << inventory.size() << endl;
+        for (const string& item : inventory) {
+            outFile << item << endl;
+        }
+        
+        // Save Pokémon vector
+        outFile << pokes.size() << endl;
+        for (const Pokemon* poke : pokes) {
+            // Save Pokémon data (you'll need to adjust this based on your actual Pokémon class)
+            outFile << poke->getName() << " " << poke->getType() << " " << poke->checkHP() << " " << poke->attack() << " " << poke->defense() << " " << poke->getType() << " " << poke->speedAttack() << " " << poke->speedDefense() << endl;
+        }
+
+        //Game saved
+        cout << "Game saved successfully." << endl;
         outFile.close();
     }
     else{
-        __throw_out_of_range("Error opening file for saving");
+        cout << "Error opening file for saving." << endl;
     }
 }
 
-void Game::loadGame(string loadFileName) {
-    cout << "Loading a save file does nothing at the moment." << endl;
-    cout << "Starting a new game." << endl << endl;
-}
+void Game::loadGame(const string& loadFileName) {
+    ifstream inFile(loadFileName);
+    if (inFile.is_open()) {
+        // Load player information
+        string filename;
+        string playerName;
+        int playerXP;
+        string isNewGame; 
+        string part1TrueOrFalse;
+        string part2TrueOrFalse;
+        string part3TrueOrFalse;
+        string part4TrueOrFalse;
+        string part5TrueOrFalse;
+        string part6TrueOrFalse;
 
-// void Game::turn() {
-//     int chance = rand() % 100; // random number between 0 and 100
-//     if (chance < 75) { // 75% of nothing happening
-//         cout << "Nothing Happened!!!" << endl;
-//     } else { // 25% chance of minibattle
-//         cout << "Mini Boss Encountered!!!" << endl;
-//         Pidgeybattle();
-//     }
-// }
+        getline(inFile, filename);
+        inFile >> playerName; 
+        inFile >> playerXP;
+        inFile >> isNewGame; 
+        inFile >> part1TrueOrFalse;
+        inFile >> part2TrueOrFalse;
+        inFile >> part3TrueOrFalse;
+        inFile >> part4TrueOrFalse;
+        inFile >> part5TrueOrFalse;
+        inFile >> part6TrueOrFalse;
+        player.setName(playerName);
+        player.setXP(playerXP);
+        
+        if(isNewGame == "t"){ isNewGame = true;}
+        else if(isNewGame == "f"){isNewGame = false;}
+        if(part1TrueOrFalse == "t"){ part1Complete = true;}
+        else if(part1TrueOrFalse == "f"){part1Complete = false;}
+        if(part2TrueOrFalse == "t"){ part2Complete = true; }
+        else if(part2TrueOrFalse == "f"){part2Complete = false;}
+        if(part3TrueOrFalse == "t"){ part3Complete = true; }
+        else if(part3TrueOrFalse == "f"){part3Complete = false;}
+        if(part4TrueOrFalse == "t"){ part4Complete = true; }
+        else if(part4TrueOrFalse == "f"){part4Complete = false;}
+        if(part5TrueOrFalse == "t"){ part5Complete = true; }
+        else if(part5TrueOrFalse == "f"){part5Complete = false;}
+        if(part6TrueOrFalse == "t"){ part6Complete = true; }
+        else if(part6TrueOrFalse == "f"){part6Complete = false;}
+     
+        // Load player inventory
+        int inventorySize;
+        inFile >> inventorySize;
+        vector<string> inventory;
+        inFile.ignore(); // Ignore newline character before reading strings
+        for (int i = 0; i < inventorySize; ++i) {
+            string item;
+            getline(inFile, item);
+            inventory.push_back(item);
+        }
+        player.setInventory(inventory);
+        // Load Pokémon vector
+        int numPokemons;
+        inFile >> numPokemons;
+        pokes.clear(); // Clear existing Pokémon
+        inFile.ignore(); // Ignore newline character before reading strings
+        for (int i = 0; i < numPokemons; ++i) {
+            string pokeName, pokeType;
+            int pokeHP, pokeAttack, pokeDefense, pokeSpeedAttack, pokeSpeedDefense;
+            
+            getline(inFile, pokeName, ' ');
+            getline(inFile, pokeType, ' ');
+            inFile >> pokeHP >> pokeAttack >> pokeDefense >> pokeSpeedAttack >> pokeSpeedDefense;
+            
+            // Create a new Pokémon instance based on the type and add it to the vector
+            Pokemon* poke = nullptr;
+            if (pokeType == "Fire") {
+                poke = new CharmanderLine();
+            } else if (pokeType == "Grass") {
+                poke = new BulbasaurLine();
+            } else if (pokeType == "Water") {
+                poke = new SquirtleLine();
+            } else if (pokeType == "Flying") {
+                poke = new PidgeyLine();
+            }
+
+            if (poke) {
+                poke->setName(pokeName);
+                poke->heal(pokeHP - poke->checkHP()); // Adjust HP
+                // Set other attributes here if needed
+                pokes.push_back(poke);
+            }
+        }
+
+        cout << "Game loaded successfully." << endl;
+    } else {
+        cout << "Could not open your saved game. Try again." << endl;
+    }
+    inFile.close();
+}
 
 void Game::battle() {
     int enemyHealth = rand() % 75;
@@ -130,7 +281,28 @@ void Game::part1(){
     cout << endl;
     type_text("Transpoting you to the world of Pokemon....");
 
-    //TODO:insert ascii of transporting lol 
+    type_ascii("                 ⣀⣠⣤⣴⣶⣶⣶⣶⣶⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀");
+    type_ascii("            ⣀⣤⣶⣿⡿⠿⠛⠛⠋⠉⠉⠉⠉⠉⠙⠛⠻⠿⣿⣿⣶⣤⡀⠀");
+    type_ascii("    ⠀⠀⠀⢀⣴⣾⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠈⠙⠿⣿⣷⣄⡀⠀⠀⠀⠀⠀⠀");
+    type_ascii("     ⢀⣴⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠈⠙⢿⣿⣦⠀⠀⠀⠀⠀");
+    type_ascii("   ⠀⣠⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠀⠻⣿⣷⡄⠀⠀⠀");
+    type_ascii("  ⠀⣼⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠈⢿⣿⣆⠀⠀");
+    type_ascii(" ⠀⣼⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀      ⠈⢿⣿⣆⠀");
+    type_ascii(" ⢰⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀      ⠈⣿⣿⡄");
+    type_ascii("⠀⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀      ⠸⣿⣧");
+    type_ascii("⢸⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀     ⠀⣿⣿");
+    type_ascii("⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀     ⠀⣿⣿");
+    type_ascii("⢸⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀     ⣠⣿⣿");
+    type_ascii("⠈⣿⣿⣿⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⢀⣀⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀     ⢀⣴⣿⣿⡿");
+    type_ascii(" ⢻⣿⡿⢿⣿⣶⣄⡀⠀⠀⠀⠀⠀ ⢀⣴⣿⣿⠿⠟⠛⠿⢿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀  ⣀⣤⣶⣿⡿⣿⣿⡇");
+    type_ascii("⠈ ⢿⣿⡄⠉⠛⠿⣿⣷⣶⣤⣤⣀⣠⣿⡿⠋⢠⠴⠒⠒⠲⢤⡈⠻⣿⣷⣀⣠⣤⣴⣶⣿⡿⠿⠋⠁    ⣰⣿⡟⠀");
+    type_ascii("  ⠈⢿⣿⡄⠀⠀⠀⠈⠉⠛⠻⠿⣿⣿⡇⠀⡏⠀⠀⠀⠀  ⠈⡇⠀⢻⣿⡿⠿⠛⠛⠉⠁⠀  ⠀ ⠀⣰⣿⡟⠀⠀");
+    type_ascii("   ⠈⢿⣿⣦⠀⠀⠀⠀⠀⠀ ⠀⢸⣿⣧⡀⠻⣄⡀⠀ ⣀⡴⠃⢠⣿⣿⠁⠀⠀⠀⠀⠀     ⢀⣼⣿⠟⠀⠀⠀");
+    type_ascii("      ⠻⣿⣷⣄⡀⠀⠀⠀   ⠙⢿⣿⣦⣄⣉⣉⣁⣤⣶⣿⠿⠁⠀⠀       ⢀⣴⣿⡿⠋⠀⠀⠀⠀");
+    type_ascii("     ⠀⠈⠻⣿⣿⣦⣀⠀ ⠀⠀⠀⠀⠉⠛⠿⠿⠿⠿⠟⠋⠁⠀⠀⠀⠀     ⠀⣠⣴⣿⡿⠋⠀⠀⠀⠀⠀⠀");
+    type_ascii("       ⠀⠀⠙⠻⢿⣿⣶⣤⣄⣀⠀⠀⠀⠀⠀⠀         ⢀⣀⣠⣤⣶⣿⡿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀");
+    type_ascii("          ⠀⠀⠈⠙⠻⠿⢿⣿⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣿⣿⣿⡿⠿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+    type_ascii("             ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠉⠉                     ");
 
     type_text("Welcome to Pinewood Town, where your journey begins.");
     type_text("You are at Professor Maple's lab, where you just chose your first Pokemon. ", "Congrats!");
@@ -233,13 +405,14 @@ void Game::part3() {
     battle(); // Battle with Gym Leader Flora
     type_text("Impressive! You've earned the Leaf Badge for visiting this gym. Take this Potion as well. It can heal your pokemon.");
     if(pokes.at(0)->getName() == "Bulbasaur"){
-        type_text("This leader battled you with a Bulbasaur Pokemon, which you already have! Because of your battle, your pokemon earned a lot of XP!");
+        type_text("This leader battled you with a Bulbasaur Pokemon, which you already have! Because of your battle, your pokemon earned a lot of XP! Your Pokemon is about to evolve!! ");
         pokes.at(0)->evolve();
     }
     else{
         catchBulbasaur();
     }
     player.addItem("Potion");
+    cout << "+1 Potion" << endl; 
     part3Complete = true; 
 }
 
@@ -369,4 +542,19 @@ void type_text(const string& text1, const string& text2) //SOURCED FROM CPLUSPLU
 	}
      usleep(150000);
 
+}
+
+void type_ascii(const string& ascii){
+
+    for (std::size_t i = 0; i < ascii.size(); ++i)
+	{
+		// output one character
+		// flush to make sure the output is not delayed
+		std::cout << ascii[i] << std::flush;
+		
+		// sleep 30 milliseconds
+		usleep(100); // use Sleep on windows
+	}
+
+    cout << endl;
 }

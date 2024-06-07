@@ -188,19 +188,6 @@ runTests/fast:
 .PHONY : runTests/fast
 
 #=============================================================================
-# Target rules for targets named GameTests
-
-# Build rule for target.
-GameTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GameTests
-.PHONY : GameTests
-
-# fast build rule for target.
-GameTests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/build
-.PHONY : GameTests/fast
-
-#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -417,7 +404,6 @@ tests/GameTest.o: tests/GameTest.cpp.o
 # target to build an object file
 tests/GameTest.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/GameTest.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/GameTest.cpp.o
 .PHONY : tests/GameTest.cpp.o
 
 tests/GameTest.i: tests/GameTest.cpp.i
@@ -426,7 +412,6 @@ tests/GameTest.i: tests/GameTest.cpp.i
 # target to preprocess a source file
 tests/GameTest.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/GameTest.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/GameTest.cpp.i
 .PHONY : tests/GameTest.cpp.i
 
 tests/GameTest.s: tests/GameTest.cpp.s
@@ -435,7 +420,6 @@ tests/GameTest.s: tests/GameTest.cpp.s
 # target to generate assembly for a file
 tests/GameTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/GameTest.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/GameTest.cpp.s
 .PHONY : tests/GameTest.cpp.s
 
 tests/PlayerTest.o: tests/PlayerTest.cpp.o
@@ -474,7 +458,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... GameTests"
 	@echo "... Pokemon"
 	@echo "... gmock"
 	@echo "... gmock_main"

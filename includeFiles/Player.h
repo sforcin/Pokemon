@@ -8,29 +8,31 @@ using namespace std;
 
 class Player{
 protected:
-    std:: string Name;
+    string Name;
     int XP;
-    int Level;
-    int HP;
-    std::vector<string> Inventory; //Inventory vector
+    vector<string> Inventory; //Inventory vector
 
 public:
     Player(const std::string& name, char gender);
-    std::string toString() const;
+   
+    void setName(const string &playerName){ Name = playerName;}
+    void setXP(const int &playerXP){ XP = playerXP;}
+    string getName() const{return Name;}
+    int getXP() const { return XP;}
+    
     void gainXP(int amount);
-    void checkLevel();
-    int getXP() const;
-    std::string getName() const{return Name;}
-    int getHP() const;
+    string toString() const;
 
     void getItemDescription(string& item);
-    const vector<string>&getInventory() const;
     void addItem(const string& item);
     bool removeItem(const std::string& item);
     void useItem(const std::string& item, Pokemon *pokemon, vector<Pokemon*> pokes);
     void getPokeballAmt() ;
     void getPotionAmt() ;
-    int  getItemCount(const string& item) const;
+    int getItemCount(const string& item) const;
+
+    const vector<string>& getInventory() const;
+    void setInventory(const vector<string>& inventory);
 
 };
 #endif

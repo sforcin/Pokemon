@@ -542,16 +542,7 @@ CMakeFiles/Pokemon.dir/lib/Player.cpp.o: lib/Player.cpp \
   /usr/include/c++/8/bits/ostream.tcc \
   /usr/include/c++/8/istream \
   /usr/include/c++/8/bits/istream.tcc \
-  /usr/include/c++/8/ctime \
-  /usr/include/c++/8/algorithm \
-  /usr/include/c++/8/utility \
-  /usr/include/c++/8/bits/stl_relops.h \
-  /usr/include/c++/8/bits/stl_algo.h \
-  /usr/include/c++/8/bits/algorithmfwd.h \
-  /usr/include/c++/8/bits/stl_heap.h \
-  /usr/include/c++/8/bits/stl_tempbuf.h \
-  /usr/include/c++/8/bits/uniform_int_dist.h \
-  /usr/include/c++/8/limits
+  /usr/include/c++/8/ctime
 
 CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o: lib/Pokemon.cpp \
   /usr/include/stdc-predef.h \
@@ -904,14 +895,6 @@ main.cpp:
 
 lib/Pokemon.cpp:
 
-/usr/include/c++/8/limits:
-
-/usr/include/c++/8/bits/uniform_int_dist.h:
-
-/usr/include/c++/8/bits/stl_tempbuf.h:
-
-/usr/include/c++/8/bits/algorithmfwd.h:
-
 lib/Player.cpp:
 
 includeFiles/Player.h:
@@ -920,15 +903,9 @@ includeFiles/Game.h:
 
 /usr/include/bits/getopt_core.h:
 
-/usr/include/c++/8/bits/stl_relops.h:
-
 /usr/include/bits/getopt_posix.h:
 
 /usr/include/bits/confname.h:
-
-/usr/include/c++/8/bits/stl_heap.h:
-
-/usr/include/c++/8/bits/stl_algo.h:
 
 /usr/include/bits/environments.h:
 
@@ -953,8 +930,6 @@ includeFiles/Game.h:
 includeFiles/Pokemon.h:
 
 /usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/8/utility:
 
 /usr/include/c++/8/bits/codecvt.h:
 
@@ -1125,8 +1100,6 @@ lib/Item.cpp:
 /usr/include/c++/8/x86_64-redhat-linux/bits/c++locale.h:
 
 /usr/include/c++/8/x86_64-redhat-linux/bits/gthr.h:
-
-/usr/include/c++/8/algorithm:
 
 /usr/include/c++/8/x86_64-redhat-linux/bits/atomic_word.h:
 

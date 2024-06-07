@@ -21,12 +21,13 @@ class Game {
         bool part5Complete = false;
         bool part6Complete = false;
         Player player;
+        string filename; 
         vector<Pokemon*> pokes;
 
     public:
         Game(); // use for creating a new game state
         void saveGame(string filename);
-        void loadGame(string filename);
+        void loadGame(const string &loadFileName);
 
         void part1();
         void part2();
@@ -44,6 +45,7 @@ class Game {
 
  void type_text(const string& text);
  void type_text(const string& text1, const string &text2);
+ void type_ascii(const string& ascii);
 
  #endif
 
