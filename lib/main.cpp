@@ -158,33 +158,35 @@ void playGame(Game &myGame, Display &display) {
     //
     // THE ACTUAL GAME LOGIC
     //
+
         else if (input == "next") { // do next turn
             if(myGame.part1Complete == false){
                 myGame.part1();
                 myGame.saveGame(filename);
             }
-            if(myGame.part2Complete == false){
+            else if(myGame.part2Complete == false){
                 myGame.part2();
                 myGame.saveGame(filename);
             }
-             if(myGame.part3Complete == false){
+            else if(myGame.part3Complete == false){
                 myGame.part3();
                 myGame.saveGame(filename);
             }
-            if(myGame.part4Complete == false){
+            else if(myGame.part4Complete == false){
                 myGame.part4();
                 myGame.saveGame(filename);
             }
-            if(myGame.part5Complete == false){
+            else if(myGame.part5Complete == false){
                 myGame.part5();
                 myGame.saveGame(filename);
             }
-            if(myGame.part6Complete == false){
+            else if(myGame.part6Complete == false){
                 myGame.part6();
                 myGame.saveGame(filename);
                 cout << "Congrats on completing the game!" << endl; 
                 loop = false;  
             }
         }
+        
     }
 }
