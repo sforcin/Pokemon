@@ -1,7 +1,7 @@
 CMakeFiles/Pokemon.dir/lib/Display.cpp.o: \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Display.cpp \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/Display.cpp \
  /usr/include/stdc-predef.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Display.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Display.h \
  /usr/include/c++/8/string \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

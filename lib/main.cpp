@@ -59,7 +59,7 @@ void playGame(Game &myGame, Display &display) {
             cout << "$:";
             int option=0;
 
-            while (!(cin >> option) || option < 1 || option > 3) { //there is a bug here
+            while (!(cin >> option) || option < 1 || option > 3) { 
                 cout << "Unknown Option!!!" << endl << endl;
                 cin >> option;
                 display.characterSelection.print();

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/includeFiles -isystem /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/googletest/googletest/include -isystem /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/googletest/googletest
+CXX_INCLUDES = -I/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/includeFiles -isystem /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/googletest/googletest/include -isystem /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/googletest/googletest
 
 CXX_FLAGS = -std=gnu++14
 
