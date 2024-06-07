@@ -92,7 +92,13 @@ Diagram is up to date with corrections
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ ![image](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/139840775/5e7368c8-3af6-4713-8637-6e28c783640a)
+![image](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/139840775/2e8fd291-7f5c-4e46-9d95-5edab2361c03)
+![image](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/139840775/1ce83c09-ebfc-4fa8-93f8-9236124abbcf)
+![image](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/139840775/f3844293-37e5-438b-b7b0-6363953cf65a)
+
+
+
  ## Installation/Usage
   > Good day to our users! Our pokemon game is a text-based rpg. To use our game, download the files from master branch into your local. From there, open the terminal where all the files are stored, and run these commands in order:
 ```
