@@ -86,6 +86,7 @@ Diagram is up to date with corrections
 
  > ## Final deliverable
  ## Final Sprint Plan
+  > All deliverables and user stories are either in testing or completed. Our last sprint will consist of everyone testing our user stories and fixing any errors and issues. All user stories have been assigned and distributed as per previous workflow (those who o=worked on the user story development were assigned to test, and a secondary developer was assigend to double check their test). Our sprint will last 1-2 weeks if executed. 
  ## Screenshots
  ![image](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/139840775/5e7368c8-3af6-4713-8637-6e28c783640a)
 ![image](https://github.com/cs100/final-project-spami-uakun-ialve-ado-bnguy/assets/139840775/2e8fd291-7f5c-4e46-9d95-5edab2361c03)
