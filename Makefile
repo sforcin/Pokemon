@@ -287,30 +287,6 @@ lib/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/Game.cpp.s
 .PHONY : lib/Game.cpp.s
 
-lib/Item.o: lib/Item.cpp.o
-.PHONY : lib/Item.o
-
-# target to build an object file
-lib/Item.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/Item.cpp.o
-.PHONY : lib/Item.cpp.o
-
-lib/Item.i: lib/Item.cpp.i
-.PHONY : lib/Item.i
-
-# target to preprocess a source file
-lib/Item.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/Item.cpp.i
-.PHONY : lib/Item.cpp.i
-
-lib/Item.s: lib/Item.cpp.s
-.PHONY : lib/Item.s
-
-# target to generate assembly for a file
-lib/Item.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/Item.cpp.s
-.PHONY : lib/Item.cpp.s
-
 lib/Player.o: lib/Player.cpp.o
 .PHONY : lib/Player.o
 
@@ -359,6 +335,30 @@ lib/Pokemon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.s
 .PHONY : lib/Pokemon.cpp.s
 
+lib/main.o: lib/main.cpp.o
+.PHONY : lib/main.o
+
+# target to build an object file
+lib/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/main.cpp.o
+.PHONY : lib/main.cpp.o
+
+lib/main.i: lib/main.cpp.i
+.PHONY : lib/main.i
+
+# target to preprocess a source file
+lib/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/main.cpp.i
+.PHONY : lib/main.cpp.i
+
+lib/main.s: lib/main.cpp.s
+.PHONY : lib/main.s
+
+# target to generate assembly for a file
+lib/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/lib/main.cpp.s
+.PHONY : lib/main.cpp.s
+
 lib/test_file.o: lib/test_file.cpp.o
 .PHONY : lib/test_file.o
 
@@ -382,30 +382,6 @@ lib/test_file.s: lib/test_file.cpp.s
 lib/test_file.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/lib/test_file.cpp.s
 .PHONY : lib/test_file.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -431,21 +407,18 @@ help:
 	@echo "... lib/Game.o"
 	@echo "... lib/Game.i"
 	@echo "... lib/Game.s"
-	@echo "... lib/Item.o"
-	@echo "... lib/Item.i"
-	@echo "... lib/Item.s"
 	@echo "... lib/Player.o"
 	@echo "... lib/Player.i"
 	@echo "... lib/Player.s"
 	@echo "... lib/Pokemon.o"
 	@echo "... lib/Pokemon.i"
 	@echo "... lib/Pokemon.s"
+	@echo "... lib/main.o"
+	@echo "... lib/main.i"
+	@echo "... lib/main.s"
 	@echo "... lib/test_file.o"
 	@echo "... lib/test_file.i"
 	@echo "... lib/test_file.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

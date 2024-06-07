@@ -9,12 +9,13 @@ include_directories(includeFiles)
 add_subdirectory(googletest)
 
 add_executable(Pokemon
-    main.cpp
+    #main.cpp
     lib/Game.cpp
     lib/Display.cpp
     lib/Player.cpp
-    lib/Item.cpp
+    #lib/Item.cpp
     lib/Pokemon.cpp
+    lib/main.cpp
 )
 
 target_link_libraries(Pokemon gtest gtest_main)

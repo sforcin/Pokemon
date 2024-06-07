@@ -69,24 +69,10 @@ include CMakeFiles/Pokemon.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Pokemon.dir/flags.make
 
-CMakeFiles/Pokemon.dir/main.cpp.o: CMakeFiles/Pokemon.dir/flags.make
-CMakeFiles/Pokemon.dir/main.cpp.o: main.cpp
-CMakeFiles/Pokemon.dir/main.cpp.o: CMakeFiles/Pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pokemon.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pokemon.dir/main.cpp.o -MF CMakeFiles/Pokemon.dir/main.cpp.o.d -o CMakeFiles/Pokemon.dir/main.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/main.cpp
-
-CMakeFiles/Pokemon.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pokemon.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/main.cpp > CMakeFiles/Pokemon.dir/main.cpp.i
-
-CMakeFiles/Pokemon.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pokemon.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/main.cpp -o CMakeFiles/Pokemon.dir/main.cpp.s
-
 CMakeFiles/Pokemon.dir/lib/Game.cpp.o: CMakeFiles/Pokemon.dir/flags.make
 CMakeFiles/Pokemon.dir/lib/Game.cpp.o: lib/Game.cpp
 CMakeFiles/Pokemon.dir/lib/Game.cpp.o: CMakeFiles/Pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pokemon.dir/lib/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pokemon.dir/lib/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pokemon.dir/lib/Game.cpp.o -MF CMakeFiles/Pokemon.dir/lib/Game.cpp.o.d -o CMakeFiles/Pokemon.dir/lib/Game.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Game.cpp
 
 CMakeFiles/Pokemon.dir/lib/Game.cpp.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/Pokemon.dir/lib/Game.cpp.s: cmake_force
 CMakeFiles/Pokemon.dir/lib/Display.cpp.o: CMakeFiles/Pokemon.dir/flags.make
 CMakeFiles/Pokemon.dir/lib/Display.cpp.o: lib/Display.cpp
 CMakeFiles/Pokemon.dir/lib/Display.cpp.o: CMakeFiles/Pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pokemon.dir/lib/Display.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pokemon.dir/lib/Display.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pokemon.dir/lib/Display.cpp.o -MF CMakeFiles/Pokemon.dir/lib/Display.cpp.o.d -o CMakeFiles/Pokemon.dir/lib/Display.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Display.cpp
 
 CMakeFiles/Pokemon.dir/lib/Display.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/Pokemon.dir/lib/Display.cpp.s: cmake_force
 CMakeFiles/Pokemon.dir/lib/Player.cpp.o: CMakeFiles/Pokemon.dir/flags.make
 CMakeFiles/Pokemon.dir/lib/Player.cpp.o: lib/Player.cpp
 CMakeFiles/Pokemon.dir/lib/Player.cpp.o: CMakeFiles/Pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pokemon.dir/lib/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pokemon.dir/lib/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pokemon.dir/lib/Player.cpp.o -MF CMakeFiles/Pokemon.dir/lib/Player.cpp.o.d -o CMakeFiles/Pokemon.dir/lib/Player.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Player.cpp
 
 CMakeFiles/Pokemon.dir/lib/Player.cpp.i: cmake_force
@@ -125,24 +111,10 @@ CMakeFiles/Pokemon.dir/lib/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pokemon.dir/lib/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Player.cpp -o CMakeFiles/Pokemon.dir/lib/Player.cpp.s
 
-CMakeFiles/Pokemon.dir/lib/Item.cpp.o: CMakeFiles/Pokemon.dir/flags.make
-CMakeFiles/Pokemon.dir/lib/Item.cpp.o: lib/Item.cpp
-CMakeFiles/Pokemon.dir/lib/Item.cpp.o: CMakeFiles/Pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pokemon.dir/lib/Item.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pokemon.dir/lib/Item.cpp.o -MF CMakeFiles/Pokemon.dir/lib/Item.cpp.o.d -o CMakeFiles/Pokemon.dir/lib/Item.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Item.cpp
-
-CMakeFiles/Pokemon.dir/lib/Item.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pokemon.dir/lib/Item.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Item.cpp > CMakeFiles/Pokemon.dir/lib/Item.cpp.i
-
-CMakeFiles/Pokemon.dir/lib/Item.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pokemon.dir/lib/Item.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Item.cpp -o CMakeFiles/Pokemon.dir/lib/Item.cpp.s
-
 CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o: CMakeFiles/Pokemon.dir/flags.make
 CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o: lib/Pokemon.cpp
 CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o: CMakeFiles/Pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o -MF CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o.d -o CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Pokemon.cpp
 
 CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.i: cmake_force
@@ -153,30 +125,42 @@ CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Pokemon.cpp -o CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.s
 
+CMakeFiles/Pokemon.dir/lib/main.cpp.o: CMakeFiles/Pokemon.dir/flags.make
+CMakeFiles/Pokemon.dir/lib/main.cpp.o: lib/main.cpp
+CMakeFiles/Pokemon.dir/lib/main.cpp.o: CMakeFiles/Pokemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pokemon.dir/lib/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pokemon.dir/lib/main.cpp.o -MF CMakeFiles/Pokemon.dir/lib/main.cpp.o.d -o CMakeFiles/Pokemon.dir/lib/main.cpp.o -c /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/main.cpp
+
+CMakeFiles/Pokemon.dir/lib/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pokemon.dir/lib/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/main.cpp > CMakeFiles/Pokemon.dir/lib/main.cpp.i
+
+CMakeFiles/Pokemon.dir/lib/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pokemon.dir/lib/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/main.cpp -o CMakeFiles/Pokemon.dir/lib/main.cpp.s
+
 # Object files for target Pokemon
 Pokemon_OBJECTS = \
-"CMakeFiles/Pokemon.dir/main.cpp.o" \
 "CMakeFiles/Pokemon.dir/lib/Game.cpp.o" \
 "CMakeFiles/Pokemon.dir/lib/Display.cpp.o" \
 "CMakeFiles/Pokemon.dir/lib/Player.cpp.o" \
-"CMakeFiles/Pokemon.dir/lib/Item.cpp.o" \
-"CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o"
+"CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o" \
+"CMakeFiles/Pokemon.dir/lib/main.cpp.o"
 
 # External object files for target Pokemon
 Pokemon_EXTERNAL_OBJECTS =
 
-Pokemon: CMakeFiles/Pokemon.dir/main.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/lib/Game.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/lib/Display.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/lib/Player.cpp.o
-Pokemon: CMakeFiles/Pokemon.dir/lib/Item.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/lib/Pokemon.cpp.o
+Pokemon: CMakeFiles/Pokemon.dir/lib/main.cpp.o
 Pokemon: CMakeFiles/Pokemon.dir/build.make
 Pokemon: lib/libgtest.a
 Pokemon: lib/libgtest_main.a
 Pokemon: lib/libgtest.a
 Pokemon: CMakeFiles/Pokemon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Pokemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Pokemon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pokemon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
