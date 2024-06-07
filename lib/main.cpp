@@ -58,7 +58,8 @@ void playGame(Game &myGame, Display &display) {
             display.characterSelection.print();
             cout << "$:";
             int option=0;
-
+            cin >> option;
+            
             while (!(cin >> option) || option < 1 || option > 3) { 
                 cout << "Unknown Option!!!" << endl << endl;
                 cin >> option;
