@@ -1,3 +1,6 @@
+This is an outline of the storyline to be implemented: 
+
+
 Pokemon Text-Based RPG Storyline
 Introduction
 You are a young Pokemon Trainer starting your journey in the region of Veridia. Your goal is to become the Pokemon Champion by defeating the region's strongest trainers and uncovering the mysteries of the ancient Pokemon said to reside in Veridia's depths.
