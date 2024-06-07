@@ -94,7 +94,14 @@ Diagram is up to date with corrections
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+  > Good day to our users! Our pokemon game is a text-based rpg. To use our game, download the files from master branch into your local. From there, open the terminal where all the files are stored, and run these commands in order:
+```
+    cmake .
+    make
+    ./Pokemon
+```
+
+ > and enjoy our game! If you need to ever exit, press "Ctrl + C" and your game will be saved at whatever point in time you leave. You can resume your game by running the commands above, and then choosing the 'Resume Game' option! Enjoy Pokemon - a Text-based RPG Game! 
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
