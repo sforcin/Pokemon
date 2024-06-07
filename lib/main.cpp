@@ -57,13 +57,16 @@ void playGame(Game &myGame, Display &display) {
 
             display.characterSelection.print();
             cout << "$:";
-            int option = 0;
+            int option=0;
             cin >> option;
 
-            while (option < 1 || 3 < option) { // invalid input
+            while (!(cin >> option) || option < 1 || option > 3) { //there is a bug here
                 cout << "Unknown Option!!!" << endl << endl;
+                cin >> option;
                 display.characterSelection.print();
                 cin >> option;
+                cin.clear();
+             
             }
 
             cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
