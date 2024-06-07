@@ -69,7 +69,7 @@ void playGame(Game &myGame, Display &display) {
             }
 
             cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
-            Pokemon *selection = new CharmanderLine(); 
+            Pokemon *selection = nullptr;
 
             switch(option) {
                 case 1:
@@ -144,6 +144,7 @@ void playGame(Game &myGame, Display &display) {
                         break;
                     case 1:
                         cout << "Saving & Exiting" << endl;
+                        myGame.saveGame(filename);
                         // cout << "Will implement something better later\nFor now, exiting loop." << endl;
                         loop = false;
                         break;
