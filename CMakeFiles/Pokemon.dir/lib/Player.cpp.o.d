@@ -1,7 +1,7 @@
 CMakeFiles/Pokemon.dir/lib/Player.cpp.o: \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Player.cpp \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/Player.cpp \
  /usr/include/stdc-predef.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Player.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Player.h \
  /usr/include/c++/8/string \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -100,7 +100,7 @@ CMakeFiles/Pokemon.dir/lib/Player.cpp.o: \
  /usr/include/c++/8/bits/stl_uninitialized.h \
  /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Pokemon.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Pokemon.h \
  /usr/include/c++/8/iostream /usr/include/c++/8/ostream \
  /usr/include/c++/8/ios /usr/include/c++/8/bits/ios_base.h \
  /usr/include/c++/8/bits/locale_classes.h \

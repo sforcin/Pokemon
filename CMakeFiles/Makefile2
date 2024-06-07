@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1
+CMAKE_SOURCE_DIR = /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1
+CMAKE_BINARY_DIR = /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -137,14 +137,14 @@ CMakeFiles/Pokemon.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/Pokemon.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pokemon.dir/build.make CMakeFiles/Pokemon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Pokemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Pokemon"
 .PHONY : CMakeFiles/Pokemon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Pokemon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Pokemon.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 0
 .PHONY : CMakeFiles/Pokemon.dir/rule
 
 # Convenience name for target.
@@ -164,14 +164,14 @@ CMakeFiles/runTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/runTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=15,16 "Built target runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles --progress-num=15,16 "Built target runTests"
 .PHONY : CMakeFiles/runTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 0
 .PHONY : CMakeFiles/runTests.dir/rule
 
 # Convenience name for target.
@@ -190,14 +190,14 @@ CMakeFiles/runTests.dir/clean:
 googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=7,8 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles --progress-num=7,8 "Built target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 0
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -217,14 +217,14 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMake
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=9,10 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles --progress-num=9,10 "Built target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 0
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -243,14 +243,14 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=11,12 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles --progress-num=11,12 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 0
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -269,14 +269,14 @@ googletest/googletest/CMakeFiles/gtest.dir/clean:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles --progress-num=13,14 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles --progress-num=13,14 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/CMakeFiles 0
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

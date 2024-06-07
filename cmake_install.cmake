@@ -1,4 +1,4 @@
-# Install script for directory: /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1
+# Install script for directory: /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/googletest/cmake_install.cmake")
+  include("/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/googletest/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

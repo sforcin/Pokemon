@@ -1,5 +1,5 @@
 CMakeFiles/Pokemon.dir/lib/Game.cpp.o: \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/Game.cpp \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/Game.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/8/fstream \
  /usr/include/c++/8/istream /usr/include/c++/8/ios \
  /usr/include/c++/8/iosfwd \
@@ -121,9 +121,9 @@ CMakeFiles/Pokemon.dir/lib/Game.cpp.o: \
  /usr/include/c++/8/bits/stl_uninitialized.h \
  /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Game.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Player.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Pokemon.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Pokemon.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Display.h \
- /home/csmajs/ialve001/final-project-spami-uakun-ialve-ado-bnguy-1/lib/../includeFiles/Player.h
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Game.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Player.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Pokemon.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Pokemon.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Display.h \
+ /home/csmajs/ado080/final-project-spami-uakun-ialve-ado-bnguy/lib/../includeFiles/Player.h
