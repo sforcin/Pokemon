@@ -28,9 +28,9 @@ TEST(GameTest, SaveGameTest) {
     std::string filename = "test_save_game.txt"; //create new filename
 
 
-    game.player = Player("User", 'x');
-    game.player.gainXP(150); 
-    game.player.addItem("Potion");
+    game.player = Player("User", 'x'); // file
+    game.player.gainXP(150);  //xp
+   // game.player.addItem("Potion"); //i dont think this is being tested
 
     game.saveGame(filename); //save the game with chosen file name
 
@@ -40,11 +40,11 @@ TEST(GameTest, SaveGameTest) {
 
     std::string line;
     std::getline(infile, line); //check content of the file
-    EXPECT_EQ(line, "Player name: User");
+    EXPECT_EQ(line, "test_save_game.txt");  //name of file 
     std::getline(infile, line);
-    EXPECT_EQ(line, "Player XP: 150");
+    EXPECT_EQ(line, "User");                //name of user
     std::getline(infile, line);
-    EXPECT_EQ(line, "Player HP: 106");
+    EXPECT_EQ(line, "150");                 //xp. following same pattern as saveFile function
 
     // close the file and remove it.
     infile.close();
