@@ -58,7 +58,6 @@ void playGame(Game &myGame, Display &display) {
             display.characterSelection.print();
             cout << "$:";
             int option=0;
-            cin >> option;
             
             while (!(cin >> option) || option < 1 || option > 3) { 
                 cout << "Unknown Option!!!" << endl << endl;
@@ -123,7 +122,7 @@ void playGame(Game &myGame, Display &display) {
 
         string input = "";
         if (input != "next" && input != "pause") {
-            cout << "'next' for next turn, 'pause' for pause menu" << endl;
+            cout << "'next' for next turn, 'pause' for pause" << endl;
             cin >> input;
         }
 
@@ -144,24 +143,16 @@ void playGame(Game &myGame, Display &display) {
                         validOption = false; // if the option isn't recognized
                         break;
                     case 1:
-                        cout << "Don't know how to pause game\nResuming game lmao" << endl;
-                        break;
-                    case 2:
-                        cout << "This feature has been removed\nResuming game lmao" << endl;
-                        break;
-                    case 3:
-                        cout << "Delete Game" << endl;
-                        cout << "Will implement something better later\nFor now, exiting loop." << endl;
+                        cout << "Saving & Exiting" << endl;
+                        // cout << "Will implement something better later\nFor now, exiting loop." << endl;
                         loop = false;
                         break;
-                    case 4:
-                        cout << "Will implement saving game later\n for now, resuming game" << endl;
-                        break;
-                    case 5:
+                    case 2:
+                        cout << "Resuming game" << endl;
                         break;
                 }
             }
-            cout << "Resuming Game" << endl;
+            // cout << "Resuming Game" << endl;
         }
     //
     // THE ACTUAL GAME LOGIC
