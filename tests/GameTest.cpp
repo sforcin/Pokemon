@@ -49,8 +49,5 @@ TEST(GameTest, SaveGameTest) {
     // close the file and remove it.
     infile.close();
     std::remove(filename.c_str());
-}
-//testing loadfile
-TEST(GameTest, LoadFileTest){
+} //done, passing
 
-}
