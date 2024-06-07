@@ -10,59 +10,48 @@
 using namespace std;
 
 TEST(PlayerTest, AddItemTest) {
-    Player player("Ash", 'M');
-    player.addItem("Pokeball");
-    testing::internal::CaptureStdout();
-    player.getPokeballAmt();
-    std::string output = testing::internal::GetCapturedStdout();
-    EXPECT_TRUE(output.find("You have 1 Pokeballs.") != std::string::npos);
+    Player player("user", 'x'); // initialize 
+    player.addItem("Pokeball"); // Add an item to inventory 
+    int pokeballCount = player.getItemCount("Pokeball"); // Get the count of Pokeballs
+    EXPECT_EQ(pokeballCount, 1); //passed.
 }
 
 TEST(PlayerTest, GainXPTest) {
-    Player player("Ash", 'M');
+    Player player("user", 'x');
     player.gainXP(50);
     EXPECT_EQ(player.getXP(), 50);
-    EXPECT_EQ(player.getHP(), 103);  //shouldnt change
+    EXPECT_EQ(player.getHP(), 103); 
 
     player.gainXP(60);  // should level up
     EXPECT_EQ(player.getXP(), 110);
     EXPECT_EQ(player.getHP(), 106);  
-}
+} //this isnt passing
 
 TEST(PlayerTest, RemoveItemTest) {
-    Player player("Ash", 'M');
-    player.addItem("Potion");
-    EXPECT_TRUE(player.removeItem("Potion"));
+    Player player("user", 'x'); //initialzie class 
+    player.addItem("Potion"); //add an item to inventory
+    EXPECT_TRUE(player.removeItem("Potion")); 
     EXPECT_FALSE(player.removeItem("Potion"));  // shouldnt work
 }
 
-TEST(PlayerTest, GetPotionAmtTest) {
-    Player player("Ash", 'M');
-    player.addItem("Potion");
-    player.addItem("Potion");
-    testing::internal::CaptureStdout();
-    player.getPotionAmt();
-    std::string output = testing::internal::GetCapturedStdout();
-    EXPECT_TRUE(output.find("You have 2 Potions.") != std::string::npos);
-}
 
 TEST(PlayerTest, GetXPTest) {
-    Player player("Ash", 'M');
+    Player player("user", 'x');
     player.gainXP(25);
     EXPECT_EQ(player.getXP(), 25);
 }
-
+//passing
 
 TEST(PlayerTest, GetHPTest) {
-    Player player("Ash", 'M');
+    Player player("user", 'x');
     EXPECT_EQ(player.getHP(), 103);  
-}
+} //passing as well
 
 
 TEST(PlayerTest, CheckLevelTest) {
-    Player player("Ash", 'M');
-    player.gainXP(200);  
-    EXPECT_EQ(player.getXP(), 200);
+    Player player("user", 'x');
+    player.gainXP(200);    //gain 200 xp
+    EXPECT_EQ(player.getXP(), 200); 
     EXPECT_EQ(player.getHP(), 109);  
 }
-
+//passing

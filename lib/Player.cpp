@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
 
 using namespace std;
 
@@ -53,6 +54,10 @@ bool Player::removeItem(const std::string& item){
     return false; 
 }
 
+const vector<string>& Player::getInventory() const {
+    return Inventory;
+}
+
 //create an overload with no pokemon pass through if it needs to be appluied to player 
 void Player::useItem(const std::string& itemName, Pokemon *pokemon, vector<Pokemon*> pokes) {
     if(itemName == "Potion"){
@@ -90,6 +95,12 @@ int Player::getXP() const{
 std::string Player::toString() const {
     return "Name: " + Name;
 }
+
+//LOOK HERE.
+int Player::getItemCount(const string& item) const {
+    return count(Inventory.begin(), Inventory.end(), item);
+}
+
 //KEEP THESE COMMENTS !!@@@@@E@&!TGEDP&YT ({!@ _______________________________________________________________________________-
 
 // void Player::choosePokemon(){

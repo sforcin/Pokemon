@@ -542,7 +542,16 @@ CMakeFiles/runTests.dir/lib/Player.cpp.o: lib/Player.cpp \
   /usr/include/c++/8/bits/ostream.tcc \
   /usr/include/c++/8/istream \
   /usr/include/c++/8/bits/istream.tcc \
-  /usr/include/c++/8/ctime
+  /usr/include/c++/8/ctime \
+  /usr/include/c++/8/algorithm \
+  /usr/include/c++/8/utility \
+  /usr/include/c++/8/bits/stl_relops.h \
+  /usr/include/c++/8/bits/stl_algo.h \
+  /usr/include/c++/8/bits/algorithmfwd.h \
+  /usr/include/c++/8/bits/stl_heap.h \
+  /usr/include/c++/8/bits/stl_tempbuf.h \
+  /usr/include/c++/8/bits/uniform_int_dist.h \
+  /usr/include/c++/8/limits
 
 CMakeFiles/runTests.dir/lib/Pokemon.cpp.o: lib/Pokemon.cpp \
   /usr/include/stdc-predef.h \
@@ -1359,8 +1368,6 @@ googletest/googletest/include/gtest/gtest_prod.h:
 
 /usr/include/bits/types/sigevent_t.h:
 
-/usr/include/bits/types/__sigval_t.h:
-
 /usr/include/bits/types/siginfo_t.h:
 
 /usr/include/c++/8/x86_64-redhat-linux/bits/cxxabi_tweaks.h:
@@ -1443,17 +1450,9 @@ googletest/googletest/include/gtest/internal/custom/gtest-printers.h:
 
 /usr/include/c++/8/ext/concurrence.h:
 
-/usr/include/assert.h:
-
-/usr/include/c++/8/bits/stl_set.h:
-
-/usr/include/c++/8/bits/stl_tempbuf.h:
-
 googletest/googletest/include/gtest/internal/gtest-internal.h:
 
 /usr/include/c++/8/memory:
-
-/usr/include/c++/8/limits:
 
 /usr/include/c++/8/cstddef:
 
@@ -1462,6 +1461,20 @@ googletest/googletest/include/gtest/gtest.h:
 googletest/googletest/include/gtest/gtest-param-test.h:
 
 lib/Pokemon.cpp:
+
+/usr/include/c++/8/limits:
+
+/usr/include/bits/types/__sigval_t.h:
+
+/usr/include/c++/8/bits/uniform_int_dist.h:
+
+/usr/include/assert.h:
+
+/usr/include/c++/8/bits/stl_set.h:
+
+/usr/include/c++/8/bits/stl_tempbuf.h:
+
+/usr/include/c++/8/bits/algorithmfwd.h:
 
 lib/Player.cpp:
 
@@ -1482,6 +1495,10 @@ googletest/googletest/include/gtest/gtest-assertion-result.h:
 /usr/include/bits/confname.h:
 
 /usr/include/c++/8/bits/sstream.tcc:
+
+/usr/include/c++/8/bits/stl_heap.h:
+
+/usr/include/c++/8/bits/stl_algo.h:
 
 /usr/include/bits/environments.h:
 
@@ -1768,6 +1785,8 @@ googletest/googletest/include/gtest/gtest-typed-test.h:
 /usr/include/c++/8/x86_64-redhat-linux/bits/c++locale.h:
 
 /usr/include/c++/8/x86_64-redhat-linux/bits/gthr.h:
+
+/usr/include/c++/8/algorithm:
 
 /usr/include/c++/8/x86_64-redhat-linux/bits/atomic_word.h:
 

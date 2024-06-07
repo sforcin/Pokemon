@@ -24,12 +24,13 @@ public:
     int getHP() const;
 
     void getItemDescription(string& item);
+    const vector<string>&getInventory() const;
     void addItem(const string& item);
     bool removeItem(const std::string& item);
     void useItem(const std::string& item, Pokemon *pokemon, vector<Pokemon*> pokes);
     void getPokeballAmt() ;
     void getPotionAmt() ;
-
+    int  getItemCount(const string& item) const;
 
 };
 #endif
