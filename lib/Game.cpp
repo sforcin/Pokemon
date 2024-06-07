@@ -28,7 +28,7 @@ void Game::saveGame(string filename) {
     ofstream outFile(filename);
     if(outFile){
         //save player information
-        outFile << filename << endl;
+        outFile << filename << endl; 
         outFile << player.getName() << endl;
         outFile << player.getXP() << endl;
     

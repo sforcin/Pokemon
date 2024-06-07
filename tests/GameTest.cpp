@@ -30,7 +30,7 @@ TEST(GameTest, SaveGameTest) {
 
     game.player = Player("User", 'x'); // file
     game.player.gainXP(150);  //xp
-   // game.player.addItem("Potion"); //i dont think this is being tested
+   // game.player.addItem("Potion"); //items are not being pushed into filed when saved, so we are no longer testing for this
 
     game.saveGame(filename); //save the game with chosen file name
 

@@ -10,7 +10,7 @@
 using namespace std;
 
 TEST(PlayerTest, AddItemTest) {
-    Player player("user", 'x'); // initialize 
+    Player player("user", 'x'); // initialize player
     player.addItem("Pokeball"); // Add an item to inventory 
     int pokeballCount = player.getItemCount("Pokeball"); // Get the count of Pokeballs
     EXPECT_EQ(pokeballCount, 1); //passed.
