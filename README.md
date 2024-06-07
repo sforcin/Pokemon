@@ -109,5 +109,15 @@ Diagram is up to date with corrections
 
  > and enjoy our game! If you need to ever exit, press "Ctrl + C" and your game will be saved at whatever point in time you leave. You can resume your game by running the commands above, and then choosing the 'Resume Game' option! Enjoy Pokemon - a Text-based RPG Game! 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ > Testing
+
+Our game was thoroughly tested using a combination of unit tests, memory checking tools, and manual testing to ensure reliability, correctness, and memory safety.
+
+**Unit Testing**
+We used the Google Test framework to write and run unit tests for core functionalities, including Pokémon evolution, abilities, player inventory management, and game save/load functionality. These tests ensure each component behaves as expected.
+
+**Memory Safety**
+Valgrind was used to check for memory leaks and other memory-related issues. We ensured that all allocated memory is properly freed and that no leaks were present by running:
+
+valgrind --leak-check=full ./Pokemon
  
