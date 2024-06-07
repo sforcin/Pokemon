@@ -57,21 +57,33 @@ void playGame(Game &myGame, Display &display) {
 
             display.characterSelection.print();
             cout << "$:";
-            int option=0;
+            char option = 'a';
+            cin >> option;
             
-            while (!(cin >> option) || option < 1 || option > 3) { 
+            while (option != '1' && option != '2' && option != '3') { 
                 cout << "Unknown Option!!!" << endl << endl;
-                cin >> option;
                 display.characterSelection.print();
                 cin >> option;
                 cin.clear();
-             
             }
 
-            cout << "You Selected " << display.characterSelection.getOptions().at(option - 1) << "!!!" << endl;
+            int optionNum = 0;
+            switch (option) {
+                case '1':
+                    optionNum = 1;
+                    break;
+                case '2':
+                    optionNum = 2;
+                    break;
+                case '3':
+                    optionNum = 3;
+                    break;
+            }
+
+            cout << "You Selected " << display.characterSelection.getOptions().at(optionNum - 1) << "!!!" << endl;
             Pokemon *selection = nullptr;
 
-            switch(option) {
+            switch(optionNum) {
                 case 1:
                     selection = new CharmanderLine();
                     break;
