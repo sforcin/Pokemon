@@ -293,6 +293,7 @@ lib/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/lib/Game.cpp.s
 .PHONY : lib/Game.cpp.s
 
+<<<<<<< HEAD
 lib/Item.o: lib/Item.cpp.o
 .PHONY : lib/Item.o
 
@@ -320,6 +321,8 @@ lib/Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/lib/Item.cpp.s
 .PHONY : lib/Item.cpp.s
 
+=======
+>>>>>>> master
 lib/Player.o: lib/Player.cpp.o
 .PHONY : lib/Player.o
 
@@ -470,9 +473,6 @@ help:
 	@echo "... lib/Game.o"
 	@echo "... lib/Game.i"
 	@echo "... lib/Game.s"
-	@echo "... lib/Item.o"
-	@echo "... lib/Item.i"
-	@echo "... lib/Item.s"
 	@echo "... lib/Player.o"
 	@echo "... lib/Player.i"
 	@echo "... lib/Player.s"
