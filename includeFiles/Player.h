@@ -29,6 +29,7 @@ public:
     void useItem(const std::string& item, Pokemon *pokemon, vector<Pokemon*> pokes);
     void getPokeballAmt() ;
     void getPotionAmt() ;
+    int getItemCount(const string& item) const;
 
     const vector<string>& getInventory() const;
     void setInventory(const vector<string>& inventory);

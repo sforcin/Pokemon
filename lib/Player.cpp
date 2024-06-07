@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
 
 using namespace std;
 
@@ -99,4 +100,8 @@ void Player::getPotionAmt() {
         }
     }
     cout << "You have " << counter << " Potions." << endl;  
+}
+
+int Player::getItemCount(const string& item) const {
+    return count(Inventory.begin(), Inventory.end(), item);
 }
